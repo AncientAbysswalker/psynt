@@ -38,7 +38,6 @@ class QuizRadioBox(wx.Control):
 
         self.select_arrow = wx.StaticBitmap(self, bitmap=wx.Bitmap(wx.Image(os.path.join(app_root, 'larr.png'))))
 
-
         self.sizer_rbox.Add(self.select_arrow, flag=wx.ALL | wx.ALIGN_CENTER_VERTICAL)
         self.select_arrow.Hide()
 

@@ -1,16 +1,29 @@
 # -*- coding: utf-8 -*-
 """This module defines panes - master panels that act as direct children of the progenitor frame"""
 
-
-import wx
-import cst_widget
-import cst_panel
-import itertools
 import os
+import wx
+import itertools
 
+import cst_panel
+import cst_widget
 import global_colors
-
 from cst_frame import app_root
+
+
+def list_max_index(ls, n):
+    """Takes a list of numbers and returns the n max indices from max to min. Ties are returned as tuples at index"""
+    ls_return = []
+    reverse_ordered_list = list(reversed(sorted(set(ls))))
+
+    try:
+        for k in range(n):
+            ls_return.append([i for i, j in enumerate(ls) if j == reverse_ordered_list[k]])
+    except IndexError:
+        pass
+
+    return ls_return
+
 
 class PaneCover(wx.Panel):
     """Master pane that acts as the landing page of the application
@@ -28,7 +41,7 @@ class PaneCover(wx.Panel):
 
         self.parent = parent
 
-        # Cover image
+        # Load cover image
         image = wx.Image(os.path.join(app_root, 'cover.jpg'), wx.BITMAP_TYPE_ANY)
         (w1, h1) = image.GetSize()
         (w2, h2) = wx.GetDisplaySize()
@@ -39,7 +52,70 @@ class PaneCover(wx.Panel):
         else:
             image_bitmap = wx.StaticBitmap(self, bitmap=wx.Bitmap(image.Rescale(w1 * h2 / h1, h2)))
 
-        # Bind ENTER presses to continue to the next page
+        # Bind keypresses to an event that governs their behaviour
+        self.Bind(wx.EVT_CHAR_HOOK, self.event_keypress)
+
+        # Main Sizer
+        self.sizer = wx.BoxSizer(wx.VERTICAL)
+        self.sizer.Add(image_bitmap, proportion=1, flag=wx.ALL | wx.EXPAND)
+
+        self.SetSizer(self.sizer)
+
+    def event_keypress(self, event):
+        """Reads keypresses and deals with their events"""
+
+        # Only proceed if this pane is active
+        if self.IsShown():
+            # Handles the use of ENTER to move on to the quiz itself
+            if event.GetKeyCode() == wx.WXK_RETURN:
+                self.event_change_pane(event)
+                return
+
+            # Handles the use of ESC to close application
+            if event.GetKeyCode() == wx.WXK_ESCAPE:
+                self.parent.Close()
+                return
+
+    def event_change_pane(self, event):
+        """Toggle frame's sizer to correspond to the quiz pane"""
+
+        # Only proceed if this pane is active
+        if self.IsShown():
+            self.Hide()
+            self.parent.panel_quiz.Show()
+            self.parent.panel_quiz.SetFocus()
+            self.parent.SetSizer(self.parent.sizer_quiz)
+            self.parent.Layout()
+
+
+class PaneInstruct(wx.Panel):
+    """Master pane that acts as the landing page of the application
+
+            Args:
+                parent (ptr): Reference to the wx.object this panel belongs to
+
+            Attributes:
+                parent (ptr): Reference to the wx.object this panel belongs to
+    """
+
+    def __init__(self, parent, *args, **kwargs):
+        """Constructor"""
+        wx.Panel.__init__(self, parent, *args, **kwargs)
+
+        self.parent = parent
+
+        # Load cover image
+        image = wx.Image(os.path.join(app_root, 'cover.jpg'), wx.BITMAP_TYPE_ANY)
+        (w1, h1) = image.GetSize()
+        (w2, h2) = wx.GetDisplaySize()
+
+        # Resize accordingly
+        if w1 / h1 < w2 / h2:
+            image_bitmap = wx.StaticBitmap(self, bitmap=wx.Bitmap(image.Rescale(w2, h1 * w2 / w1)))
+        else:
+            image_bitmap = wx.StaticBitmap(self, bitmap=wx.Bitmap(image.Rescale(w1 * h2 / h1, h2)))
+
+        # Bind keypresses to continue to the next page
         self.Bind(wx.EVT_CHAR_HOOK, self.event_keypress)
 
         # Next button with bind - Deprecated
@@ -53,16 +129,6 @@ class PaneCover(wx.Panel):
         self.SetSizer(self.sizer)
 
         self.Layout()
-
-    def event_change_pane(self, event):
-        """Toggle frame's sizer to correspond to the quiz pane"""
-        if self.IsShown():
-            self.parent.SetTitle("Question 1")
-            self.Hide()
-            self.parent.panel_quiz.Show()
-            self.parent.panel_quiz.SetFocus()
-            self.parent.SetSizer(self.parent.sizer_quiz)
-            self.parent.Layout()
 
     def event_keypress(self, event):
         """Reads keypresses and deals with their events"""
@@ -78,6 +144,17 @@ class PaneCover(wx.Panel):
             if event.GetKeyCode() == wx.WXK_ESCAPE:
                 self.parent.Close()
 
+    def event_change_pane(self, event):
+        """Toggle frame's sizer to correspond to the quiz pane"""
+
+        # Only proceed if this pane is active
+        if self.IsShown():
+            self.Hide()
+            self.parent.panel_quiz.Show()
+            self.parent.panel_quiz.SetFocus()
+            self.parent.SetSizer(self.parent.sizer_quiz)
+            self.parent.Layout()
+
 
 class PaneTest(wx.Panel):
     """Master pane that handles the quiz portion of the application
@@ -87,6 +164,10 @@ class PaneTest(wx.Panel):
 
             Attributes:
                 parent (ptr): Reference to the wx.object this panel belongs to
+                quantity (int): Integer count of the number of questions to populate - based on your screen size
+                radio_boxes (list: ptr->wx.widget): List of pointers to all radio box widgets generated
+                current_questions (list: list): List of all questions to be shown in current set of questions
+                selected_question (int): Current selected question for tab-through handling. -1 indicates no selection
     """
 
     def __init__(self, parent, *args, **kwargs):
@@ -95,7 +176,7 @@ class PaneTest(wx.Panel):
 
         # Attributes
         self.parent = parent
-        self.quantity = wx.GetDisplaySize()[1] // (15 + 2 * (15 + 7)) - 2
+        self.quantity = wx.GetDisplaySize()[1] // (15 + 2 * (15 + 7)) - 2  # Take height (px) and divide by entry size
         self.radio_boxes = []
         self.current_questions = []
         self.selected_question = -1
@@ -106,26 +187,26 @@ class PaneTest(wx.Panel):
         self.SetFont(font)
         self.SetBackgroundColour(global_colors.background)
 
-        # Bordered Sizer
+        # Bordered sizer with text surrounding all quiz questions
         temp = wx.StaticBox(self, label="Please select your preference level for each of the following actions")
         self.sizer_bordered = wx.StaticBoxSizer(temp, orient=wx.VERTICAL)
 
-        # Define radio buttons
+        # Load in radio buttons and place a reference in a list
         lbl_list = ["No Preference", "Mild Preference", "Moderate Preference", "Strong Preference"]
         for i in range(self.quantity):
             rbox = cst_widget.QuizRadioBox(self, lbl_list, global_colors.background)
             self.radio_boxes.append(rbox)
             self.sizer_bordered.Add(rbox, flag=wx.CENTER | wx.EXPAND)
 
-        # Load questions into the radio buttons
+        # Load questions and push them to the radio buttons
         self.pop_questions()
         self.push_questions()
 
-        # Next button with bind
+        # Add a 'Next' button with click binding
         button_next = wx.Button(self, label='Next')
         button_next.Bind(wx.EVT_BUTTON, self.event_next_question_set)
 
-        # Bind ENTER presses to continue to the next page
+        # Bind keypresses to an event that governs their behaviour
         self.Bind(wx.EVT_CHAR_HOOK, self.event_keypress)
 
         # Main Sizer
@@ -136,7 +217,7 @@ class PaneTest(wx.Panel):
         self.SetSizer(self.sizer_main)
 
     def pop_questions(self):
-        """Pop some questions to be ready for display"""
+        """Pop some questions to be ready for display. If there are too few, pop the rest of the questions"""
         self.current_questions = []
         if self.quantity < len(self.parent.questions):
             for i in range(self.quantity):
@@ -146,7 +227,7 @@ class PaneTest(wx.Panel):
             self.parent.questions = []
 
     def push_questions(self):
-        """Push question parameters into radio buttons"""
+        """Push question parameters into radio buttons, hiding any that remain unfilled at the end"""
         if 0 < len(self.parent.questions):
             for i in range(self.quantity):
                 self.radio_boxes[i].question_text.SetLabel(self.current_questions[i][0])
@@ -200,6 +281,7 @@ class PaneTest(wx.Panel):
             for rbox in self.radio_boxes:
                 self.parent.scoring[rbox.q_type] += rbox.GetSelection()
 
+            # If there are more questions, pop/push a set and reset the radio buttons to no selection
             if len(self.parent.questions) > 0:
                 self.select_first()
                 self.pop_questions()
@@ -208,17 +290,19 @@ class PaneTest(wx.Panel):
                 # Reset radio buttons
                 for rbox in self.radio_boxes:
                     rbox.SetSelection(0)
+
+            # Otherwise, toggle frame's sizer to correspond to the summary pane and carry out ranking
             else:
                 self.Hide()
                 self.parent.panel_summary.Show()
                 self.parent.SetSizer(self.parent.sizer_summary)
                 self.parent.Layout()
 
+                # Determine the proper ranking (indices) of scores and determine your results from the key
                 self.parent.ranking = list_max_index(self.parent.scoring, 4)
+                self.determine_results()
 
-                self.rank_results()
-
-                print(self.parent.panel_summary.listofscores)
+                # Update the summary pane, freezing and thawing to prevent graphical artifacts on population
                 self.parent.Freeze()
                 self.parent.panel_summary.summary_panel.refresh()
                 self.parent.Thaw()
@@ -250,17 +334,13 @@ class PaneTest(wx.Panel):
     def select_first(self):
         """Select first radio button"""
         if self.selected_question >= 0:
+            self.radio_boxes[self.selected_question].SelectedQuestion(False)
             self.selected_question = 0
             self.radio_boxes[0].SelectedQuestion(True)
-            for rbox in self.radio_boxes[1:]:
-                rbox.SelectedQuestion(False)
-                self.Layout()
+            self.Layout()
 
-    def rank_results(self):
-        """Rank results and populate the list"""
-
-        print(self.parent.ranking)
-        print(self.parent.scoring)
+    def determine_results(self):
+        """Populate the results based on ranking"""
 
         # In the case where you have a 3-way tie for first
         if len(self.parent.ranking[0]) >= 3:
@@ -346,14 +426,3 @@ class PaneSummary(wx.Panel):
             self.parent.SetTitle("Question 1")
             self.Hide()
             self.parent.panelTwo.Show()
-
-def list_max_index(ls, n):
-    ls_return = []
-    ord_set = list(reversed(sorted(set(ls))))
-
-    try:
-        for k in range(n):
-            ls_return.append([i for i, j in enumerate(ls) if j == ord_set[k]])
-    except IndexError:
-        pass
-    return ls_return
