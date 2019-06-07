@@ -26,7 +26,6 @@ class MainApp(wx.Frame):
                 ranking (list): List of score indices, ranked high to low
                 results (list: list): List of returned texts based on 3-digit octal key
                 convert_key (dict) Dictionary translating 3-digit octal keys to applicable results
-
     """
 
     def __init__(self, *args, **kwargs):
@@ -43,6 +42,15 @@ class MainApp(wx.Frame):
         self.results = []
         self.convert_key = {}
         self.load_convert_key()
+
+        # Initialize text fielddescriptions
+        self.staticbox_label = None
+        self.rbox_labels = None
+        self.code_1 = None
+        self.title_1 = None
+        self.code_2 = None
+        self.title_2 = None
+        self.load_text_fields()
 
         # Pane sizers
         self.sizer_cover = wx.BoxSizer(wx.VERTICAL)
@@ -77,6 +85,17 @@ class MainApp(wx.Frame):
         with open(os.path.join(app_root, 'convert_key.yaml'), 'r') as stream:
             self.convert_key = yaml.safe_load(stream)
 
+    def load_text_fields(self):
+        """Load the parameters key"""
+        with open(os.path.join(app_root, 'text_fields.yaml'), 'r') as stream:
+            _temp = yaml.safe_load(stream)
+            self.staticbox_label = _temp["staticbox_label"]
+            self.rbox_labels = _temp["rbox_labels"]
+            self.code_1 = _temp["code_1"]
+            self.title_1 = _temp["title_1"]
+            self.code_2 = _temp["code_2"]
+            self.title_2 = _temp["title_2"]
+            self.summary_text = _temp["summary_text"]
 
 def main():
     """Run application as full-screen window"""

@@ -7,7 +7,7 @@ import itertools
 
 import cst_panel
 import cst_widget
-import global_colors
+import gbl_colors
 from cst_frame import app_root
 
 
@@ -185,16 +185,15 @@ class PaneTest(wx.Panel):
         font = self.GetFont()
         font.SetPointSize(15)
         self.SetFont(font)
-        self.SetBackgroundColour(global_colors.background)
+        self.SetBackgroundColour(gbl_colors.background)
 
         # Bordered sizer with text surrounding all quiz questions
-        temp = wx.StaticBox(self, label="Please select your preference level for each of the following actions")
+        temp = wx.StaticBox(self, label=self.parent.staticbox_label)
         self.sizer_bordered = wx.StaticBoxSizer(temp, orient=wx.VERTICAL)
 
         # Load in radio buttons and place a reference in a list
-        lbl_list = ["No Preference", "Mild Preference", "Moderate Preference", "Strong Preference"]
         for i in range(self.quantity):
-            rbox = cst_widget.QuizRadioBox(self, lbl_list, global_colors.background)
+            rbox = cst_widget.QuizRadioBox(self, self.parent.rbox_labels, gbl_colors.background)
             self.radio_boxes.append(rbox)
             self.sizer_bordered.Add(rbox, flag=wx.CENTER | wx.EXPAND)
 
@@ -238,6 +237,8 @@ class PaneTest(wx.Panel):
                 self.radio_boxes[i].q_type = self.current_questions[i][1]
             for i in range(self.quantity - len(self.current_questions)):
                 self.radio_boxes[i + len(self.current_questions)].Hide()
+
+            self.Layout()
 
     def event_keypress(self, event):
         """Reads keypresses and deals with their events"""
@@ -299,7 +300,9 @@ class PaneTest(wx.Panel):
                 self.parent.Layout()
 
                 # Determine the proper ranking (indices) of scores and determine your results from the key
+                self.parent.scoring = [33, 25, 25, 29, 32, 37, 31]
                 self.parent.ranking = list_max_index(self.parent.scoring, 4)
+
                 self.determine_results()
 
                 # Update the summary pane, freezing and thawing to prevent graphical artifacts on population
@@ -313,7 +316,7 @@ class PaneTest(wx.Panel):
             self.selected_question = 0
             self.radio_boxes[0].SelectedQuestion(True)
             self.Layout()
-        elif self.selected_question < len(self.radio_boxes) - 1:
+        elif self.selected_question < len(self.current_questions) - 1:#len(self.radio_boxes) - 1:
             self.radio_boxes[self.selected_question].SelectedQuestion(False)
             self.selected_question += 1
             self.radio_boxes[self.selected_question].SelectedQuestion(True)
@@ -342,72 +345,91 @@ class PaneTest(wx.Panel):
     def determine_results(self):
         """Populate the results based on ranking"""
 
-        # In the case where you have a 3-way tie for first
+        print(self.parent.scoring)
+
+        # In the case where we have a 3-way tie for first
         if len(self.parent.ranking[0]) >= 3:
             comb = list(itertools.permutations(self.parent.ranking[0], 3))
             for key in comb:
                 mask = oct(key[2] + key[1] * 8 + key[0] * 8 ** 2)
-                self.add_result(mask)
-            if self.parent.results:
-                print("exit 3")
-                return
-        print("faile 3")
+                print(mask)
+                self.add_result(mask, "111")
 
         # In the case where you have a 2-way tie for first
-        if len(self.parent.ranking[0]) == 2:
+        if len(self.parent.ranking[0]) >= 2:
             comb = list(itertools.permutations(self.parent.ranking[0], 2))
             for first2dig in comb:
                 for lastdig in self.parent.ranking[1]:
                     mask = oct(lastdig + first2dig[1] * 8 + first2dig[0] * 8 ** 2)
-                    self.add_result(mask)
-            if self.parent.results:
-                print("exit 2")
-                return
-        print("faile 2")
+                    print(mask)
+                    self.add_result(mask, "112")
 
         # In the normal case where you have a single first pick
-        if len(self.parent.ranking[0]) == 1:
+        if len(self.parent.ranking[0]) >= 1:
             if len(self.parent.ranking[1]) >= 2:
                 comb = list(itertools.permutations(self.parent.ranking[1], 2))
                 for last2dig in comb:
                     mask = oct(last2dig[1] + last2dig[0] * 8 + self.parent.ranking[0][0] * 8 ** 2)
-                    self.add_result(mask)
-                if self.parent.results:
-                    print("exit 3-2")
+                    print(mask)
+                    self.add_result(mask, "122")
+
+            try:
+                for lastdig in self.parent.ranking[2]:
+                    mask = oct(lastdig + self.parent.ranking[1][0] * 8 + self.parent.ranking[0][0] * 8 ** 2)
+                    print(mask)
+                    self.add_result(mask, "123")
+                if len(self.parent.results) > 5:
                     return
-            print("faile 1-2")
+            except IndexError:
+                pass
 
-            for lastdig in self.parent.ranking[2]:
-                mask = oct(lastdig + self.parent.ranking[1][0] * 8 + self.parent.ranking[0][0] * 8 ** 2)
-                self.add_result(mask)
-            if self.parent.results:
-                print("exit 3-1-1")
-                return
-            print("scree")
+            for i in range(3, 7):
+                try:
+                    for lastdig in self.parent.ranking[i]:
+                        mask = oct(lastdig + self.parent.ranking[1][0] * 8 + self.parent.ranking[0][0] * 8 ** 2)
+                        print(mask)
+                        self.add_result(mask, "12" + str(i))
+                except IndexError:
+                    pass
 
-            for lastdig in self.parent.ranking[3]:
-                mask = oct(lastdig + self.parent.ranking[1][0] * 8 + self.parent.ranking[0][0] * 8 ** 2)
-                self.add_result(mask)
-            if self.parent.results:
-                print("exit 3-1-1-err")
-                return
-
-    def add_result(self, mask):
+    def add_result(self, mask, rank):
         try:
-            self.parent.results.extend(self.parent.convert_key[int(mask, 8)])
+            self.parent.results.extend([i + [rank] for i in self.parent.convert_key[int(mask, 8)]])
         except KeyError:
             pass
 
 
 class PaneSummary(wx.Panel):
+    """Master pane that handles the quiz portion of the application
+
+                Args:
+                    parent (ptr): Reference to the wx.object this panel belongs to
+
+                Attributes:
+                    parent (ptr): Reference to the wx.object this panel belongs to
+                    quantity (int): Integer count of the number of questions to populate - based on your screen size
+                    radio_boxes (list: ptr->wx.widget): List of pointers to all radio box widgets generated
+                    current_questions (list: list): List of all questions to be shown in current set of questions
+                    selected_question (int): Current selected question for tab-through handling. -1 indicates no selection
+    """
+
     def __init__(self, parent, *args, **kwargs):
         wx.Panel.__init__(self, parent, *args, **kwargs)
 
         self.parent = parent
 
+        # Draw Style
+        font = self.GetFont()
+        font.SetPointSize(15)
+        self.SetFont(font)
+        self.SetBackgroundColour(gbl_colors.background)
+
+        # Bind keypresses to an event that governs their behaviour
+        self.Bind(wx.EVT_CHAR_HOOK, self.event_keypress)
+
         self.listofscores = []
 
-        title_text = wx.StaticText(self, size=(-1, -1), label="I AM LES TEXTQUES")
+        title_text = wx.StaticText(self, size=(-1, -1), label=self.parent.summary_text)
         self.summary_panel = cst_panel.ScrolledResultsPanel(self)
         #for index, score in enumerate(parent.scoring):
         #    self.listofscores.append(wx.StaticText(self, size=(-1, -1), label="0"))
@@ -421,8 +443,11 @@ class PaneSummary(wx.Panel):
         self.SetSizer(self.sizer)
         self.Layout()
 
-    def changeIntroPanel( self, event ):
+    def event_keypress(self, event):
+        """Reads keypresses and deals with their events"""
+
+        # Only proceed if this pane is active
         if self.IsShown():
-            self.parent.SetTitle("Question 1")
-            self.Hide()
-            self.parent.panelTwo.Show()
+            # Handles the use of ESC to close application
+            if event.GetKeyCode() == wx.WXK_ESCAPE:
+                self.parent.Close()
