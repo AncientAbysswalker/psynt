@@ -8,6 +8,7 @@ import itertools
 import cst_panel
 import cst_widget
 import gbl_colors
+import config
 from cst_frame import app_root
 
 
@@ -82,8 +83,8 @@ class PaneCover(wx.Panel):
         # Only proceed if this pane is active
         if self.IsShown():
             self.Hide()
-            self.parent.panel_quiz.Show()
-            self.parent.panel_quiz.SetFocus()
+            self.parent.pane_quiz.Show()
+            self.parent.pane_quiz.SetFocus()
             self.parent.SetSizer(self.parent.sizer_quiz)
             self.parent.Layout()
 
@@ -150,8 +151,8 @@ class PaneInstruct(wx.Panel):
         # Only proceed if this pane is active
         if self.IsShown():
             self.Hide()
-            self.parent.panel_quiz.Show()
-            self.parent.panel_quiz.SetFocus()
+            self.parent.pane_quiz.Show()
+            self.parent.pane_quiz.SetFocus()
             self.parent.SetSizer(self.parent.sizer_quiz)
             self.parent.Layout()
 
@@ -188,12 +189,12 @@ class PaneTest(wx.Panel):
         self.SetBackgroundColour(gbl_colors.background)
 
         # Bordered sizer with text surrounding all quiz questions
-        temp = wx.StaticBox(self, label=self.parent.staticbox_label)
+        temp = wx.StaticBox(self, label=config.staticbox_label)
         self.sizer_bordered = wx.StaticBoxSizer(temp, orient=wx.VERTICAL)
 
         # Load in radio buttons and place a reference in a list
         for i in range(self.quantity):
-            rbox = cst_widget.QuizRadioBox(self, self.parent.rbox_labels, gbl_colors.background)
+            rbox = cst_widget.QuizRadioBox(self, config.rbox_labels, gbl_colors.background)
             self.radio_boxes.append(rbox)
             self.sizer_bordered.Add(rbox, flag=wx.CENTER | wx.EXPAND)
 
@@ -295,8 +296,9 @@ class PaneTest(wx.Panel):
             # Otherwise, toggle frame's sizer to correspond to the summary pane and carry out ranking
             else:
                 self.Hide()
-                self.parent.panel_summary.Show()
+                self.parent.pane_summary.Show()
                 self.parent.SetSizer(self.parent.sizer_summary)
+                self.parent.pane_summary.SetFocus()
                 self.parent.Layout()
 
                 # Determine the proper ranking (indices) of scores and determine your results from the key
@@ -307,7 +309,7 @@ class PaneTest(wx.Panel):
 
                 # Update the summary pane, freezing and thawing to prevent graphical artifacts on population
                 self.parent.Freeze()
-                self.parent.panel_summary.summary_panel.refresh()
+                self.parent.pane_summary.summary_panel.refresh()
                 self.parent.Thaw()
 
     def select_next(self):
@@ -429,15 +431,16 @@ class PaneSummary(wx.Panel):
 
         self.listofscores = []
 
-        title_text = wx.StaticText(self, size=(-1, -1), label=self.parent.summary_text)
-        self.summary_panel = cst_panel.ScrolledResultsPanel(self)
+        title_text = wx.StaticText(self, size=(-1, -1), label=config.summary_text)
+        self.panel_scroll = cst_panel.ScrolledResultsPanel(self)
         #for index, score in enumerate(parent.scoring):
         #    self.listofscores.append(wx.StaticText(self, size=(-1, -1), label="0"))
 
         # Sizer Layout
         self.sizer = wx.BoxSizer(wx.VERTICAL)
         self.sizer.Add(title_text, flag=wx.ALL | wx.EXPAND)
-        self.sizer.Add(self.summary_panel, proportion=1, flag=wx.ALL | wx.EXPAND)
+        self.sizer.Add(wx.StaticLine(self, style=wx.LI_HORIZONTAL), flag=wx.EXPAND)
+        self.sizer.Add(self.panel_scroll, proportion=1, flag=wx.ALL | wx.EXPAND)
         #for pleq in self.listofscores:
         #    self.sizer.Add(pleq, proportion=1, flag=wx.ALL | wx.EXPAND)
         self.SetSizer(self.sizer)

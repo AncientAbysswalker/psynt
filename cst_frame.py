@@ -4,10 +4,11 @@
 import os
 import sys
 import wx
-import yaml
 import random
+import yaml
 
 import cst_pane
+import config
 
 
 # Handle whether we are frozen
@@ -43,14 +44,7 @@ class MainApp(wx.Frame):
         self.convert_key = {}
         self.load_convert_key()
 
-        # Initialize text fielddescriptions
-        self.staticbox_label = None
-        self.rbox_labels = None
-        self.code_1 = None
-        self.title_1 = None
-        self.code_2 = None
-        self.title_2 = None
-        self.load_text_fields()
+        config.load_config()
 
         # Pane sizers
         self.sizer_cover = wx.BoxSizer(wx.VERTICAL)
@@ -58,16 +52,16 @@ class MainApp(wx.Frame):
         self.sizer_summary = wx.BoxSizer(wx.VERTICAL)
 
         # Load all panels and place in their sizers
-        self.panel_cover = cst_pane.PaneCover(self)
-        self.panel_quiz = cst_pane.PaneTest(self)
-        self.panel_summary = cst_pane.PaneSummary(self)
-        self.sizer_cover.Add(self.panel_cover, proportion=1, flag=wx.EXPAND)
-        self.sizer_quiz.Add(self.panel_quiz, proportion=1, flag=wx.EXPAND)
-        self.sizer_summary.Add(self.panel_summary, proportion=1, flag=wx.EXPAND)
+        self.pane_cover = cst_pane.PaneCover(self)
+        self.pane_quiz = cst_pane.PaneTest(self)
+        self.pane_summary = cst_pane.PaneSummary(self)
+        self.sizer_cover.Add(self.pane_cover, proportion=1, flag=wx.EXPAND)
+        self.sizer_quiz.Add(self.pane_quiz, proportion=1, flag=wx.EXPAND)
+        self.sizer_summary.Add(self.pane_summary, proportion=1, flag=wx.EXPAND)
 
         # Only show the cover initially
-        self.panel_quiz.Hide()
-        self.panel_summary.Hide()
+        self.pane_quiz.Hide()
+        self.pane_summary.Hide()
 
         # Set initial sizer and show self
         self.SetSizer(self.sizer_cover)
@@ -85,17 +79,6 @@ class MainApp(wx.Frame):
         with open(os.path.join(app_root, 'convert_key.yaml'), 'r') as stream:
             self.convert_key = yaml.safe_load(stream)
 
-    def load_text_fields(self):
-        """Load the parameters key"""
-        with open(os.path.join(app_root, 'text_fields.yaml'), 'r') as stream:
-            _temp = yaml.safe_load(stream)
-            self.staticbox_label = _temp["staticbox_label"]
-            self.rbox_labels = _temp["rbox_labels"]
-            self.code_1 = _temp["code_1"]
-            self.title_1 = _temp["title_1"]
-            self.code_2 = _temp["code_2"]
-            self.title_2 = _temp["title_2"]
-            self.summary_text = _temp["summary_text"]
 
 def main():
     """Run application as full-screen window"""
