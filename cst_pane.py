@@ -15,6 +15,7 @@ from cst_frame import app_root
 def list_max_index(ls, n):
     """Takes a list of numbers and returns the n max indices from max to min. Ties are returned as tuples at index"""
     ls_return = []
+
     reverse_ordered_list = list(reversed(sorted(set(ls))))
 
     try:
@@ -83,9 +84,9 @@ class PaneCover(wx.Panel):
         # Only proceed if this pane is active
         if self.IsShown():
             self.Hide()
-            self.parent.pane_quiz.Show()
-            self.parent.pane_quiz.SetFocus()
-            self.parent.SetSizer(self.parent.sizer_quiz)
+            self.parent.pane_instruct.Show()
+            self.parent.pane_instruct.SetFocus()
+            self.parent.SetSizer(self.parent.sizer_instruct)
             self.parent.Layout()
 
 
@@ -302,14 +303,14 @@ class PaneTest(wx.Panel):
                 self.parent.Layout()
 
                 # Determine the proper ranking (indices) of scores and determine your results from the key
-                self.parent.scoring = [33, 25, 25, 29, 32, 37, 31]
                 self.parent.ranking = list_max_index(self.parent.scoring, 4)
 
+                print(self.parent.ranking)
                 self.determine_results()
 
                 # Update the summary pane, freezing and thawing to prevent graphical artifacts on population
                 self.parent.Freeze()
-                self.parent.pane_summary.summary_panel.refresh()
+                self.parent.pane_summary.panel_scroll.refresh()
                 self.parent.Thaw()
 
     def select_next(self):
@@ -349,50 +350,15 @@ class PaneTest(wx.Panel):
 
         print(self.parent.scoring)
 
-        # In the case where we have a 3-way tie for first
-        if len(self.parent.ranking[0]) >= 3:
-            comb = list(itertools.permutations(self.parent.ranking[0], 3))
-            for key in comb:
-                mask = oct(key[2] + key[1] * 8 + key[0] * 8 ** 2)
-                print(mask)
-                self.add_result(mask, "111")
+        combined_ranks = []
 
-        # In the case where you have a 2-way tie for first
-        if len(self.parent.ranking[0]) >= 2:
-            comb = list(itertools.permutations(self.parent.ranking[0], 2))
-            for first2dig in comb:
-                for lastdig in self.parent.ranking[1]:
-                    mask = oct(lastdig + first2dig[1] * 8 + first2dig[0] * 8 ** 2)
-                    print(mask)
-                    self.add_result(mask, "112")
+        for ranks in self.parent.ranking[:3]:
+            combined_ranks.extend(ranks)
 
-        # In the normal case where you have a single first pick
-        if len(self.parent.ranking[0]) >= 1:
-            if len(self.parent.ranking[1]) >= 2:
-                comb = list(itertools.permutations(self.parent.ranking[1], 2))
-                for last2dig in comb:
-                    mask = oct(last2dig[1] + last2dig[0] * 8 + self.parent.ranking[0][0] * 8 ** 2)
-                    print(mask)
-                    self.add_result(mask, "122")
-
-            try:
-                for lastdig in self.parent.ranking[2]:
-                    mask = oct(lastdig + self.parent.ranking[1][0] * 8 + self.parent.ranking[0][0] * 8 ** 2)
-                    print(mask)
-                    self.add_result(mask, "123")
-                if len(self.parent.results) > 5:
-                    return
-            except IndexError:
-                pass
-
-            for i in range(3, 7):
-                try:
-                    for lastdig in self.parent.ranking[i]:
-                        mask = oct(lastdig + self.parent.ranking[1][0] * 8 + self.parent.ranking[0][0] * 8 ** 2)
-                        print(mask)
-                        self.add_result(mask, "12" + str(i))
-                except IndexError:
-                    pass
+        comb = list(itertools.permutations(combined_ranks, 3))
+        for key in comb:
+            mask = oct(key[2] + key[1] * 8 + key[0] * 8 ** 2)
+            self.add_result(mask, "|".join([config.initials[i] for i in key]))
 
     def add_result(self, mask, rank):
         try:

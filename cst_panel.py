@@ -7,15 +7,16 @@ from wx.adv import HyperlinkCtrl as hyperlink
 
 import config
 
+
 class ScrolledResultsPanel(scrolled.ScrolledPanel):
-    """Summary of class here.
+    """This scrolled panel contains the summary information populated from the quiz
 
-    Longer class information....
-    Longer class information....
+            Args:
+                parent (ptr): Reference to the wx.object this panel belongs to
 
-    Attributes:
-        likes_spam: A boolean indicating if we like SPAM or not.
-        eggs: An integer count of the eggs we have laid.
+            Attributes:
+                parent (ptr): Reference to the wx.object this panel belongs to
+                interspace (int): Space between rows
     """
 
     def __init__(self, parent):
@@ -56,7 +57,6 @@ class ScrolledResultsPanel(scrolled.ScrolledPanel):
         self.SetSizer(sizer_cols)
 
         # Setup the scrolling style and function, wanting only vertical scroll to be available
-        # self.SetAutoLayout(1)
         self.SetupScrolling()
         self.ShowScrollbars(wx.SHOW_SB_NEVER, wx.SHOW_SB_ALWAYS)
         self.SetWindowStyle(wx.VSCROLL)
@@ -64,12 +64,8 @@ class ScrolledResultsPanel(scrolled.ScrolledPanel):
         self.Layout()
 
     def refresh(self):
-
-
-        print(self.parent.parent.results)
+        """Populate results into the panel and update the layout"""
         for result in self.parent.parent.results:
-
-            print(result)
             self.sizer_affinity.Add(wx.StaticText(self, label=result[4]))
             self.sizer_affinity.AddSpacer(self.interspace-1)
             self.sizer_code_1.Add(hyperlink(self,

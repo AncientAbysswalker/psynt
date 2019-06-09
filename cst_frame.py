@@ -48,18 +48,22 @@ class MainApp(wx.Frame):
 
         # Pane sizers
         self.sizer_cover = wx.BoxSizer(wx.VERTICAL)
+        self.sizer_instruct = wx.BoxSizer(wx.VERTICAL)
         self.sizer_quiz = wx.BoxSizer(wx.VERTICAL)
         self.sizer_summary = wx.BoxSizer(wx.VERTICAL)
 
         # Load all panels and place in their sizers
         self.pane_cover = cst_pane.PaneCover(self)
+        self.pane_instruct = cst_pane.PaneInstruct(self)
         self.pane_quiz = cst_pane.PaneTest(self)
         self.pane_summary = cst_pane.PaneSummary(self)
         self.sizer_cover.Add(self.pane_cover, proportion=1, flag=wx.EXPAND)
+        self.sizer_instruct.Add(self.pane_instruct, proportion=1, flag=wx.EXPAND)
         self.sizer_quiz.Add(self.pane_quiz, proportion=1, flag=wx.EXPAND)
         self.sizer_summary.Add(self.pane_summary, proportion=1, flag=wx.EXPAND)
 
         # Only show the cover initially
+        self.pane_instruct.Hide()
         self.pane_quiz.Hide()
         self.pane_summary.Hide()
 
