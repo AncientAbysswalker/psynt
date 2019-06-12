@@ -1,0 +1,2520 @@
+10:
+- - FCA111
+  - 0, 36, 93, 1
+  - 252, 161, 17
+  - fumbling plant
+- - FCA222
+  - 0, 36, 87, 1
+  - 252, 162, 34
+  - animal receipt
+- - FCA333
+  - 0, 35, 80, 1
+  - 252, 163, 51
+  - heavy story
+- - FCA444
+  - 0, 35, 73, 1
+  - 252, 164, 68
+  - last neighborly
+- - FCA555
+  - 0, 35, 66, 1
+  - 252, 165, 85
+  - adjustment cheer
+11:
+- - FC1A11
+  - 0, 90, 93, 1
+  - 252, 26, 17
+  - fetch amusement
+- - FC2A22
+  - 0, 83, 87, 1
+  - 252, 42, 34
+  - back oven
+- - FC3A33
+  - 0, 77, 80, 1
+  - 252, 58, 51
+  - picture water
+- - FC4A44
+  - 0, 71, 73, 1
+  - 252, 74, 68
+  - better waste
+- - FC5A55
+  - 0, 64, 66, 1
+  - 252, 90, 85
+  - bruise tray
+12:
+- - FC11A1
+  - 0, 93, 36, 1
+  - 252, 17, 161
+  - dare mask
+- - FC22A2
+  - 0, 87, 36, 1
+  - 252, 34, 162
+  - yell history
+- - FC33A3
+  - 0, 80, 35, 1
+  - 252, 51, 163
+  - afford ready
+- - FC44A4
+  - 0, 73, 35, 1
+  - 252, 68, 164
+  - puncture thankful
+- - FC55A5
+  - 0, 66, 35, 1
+  - 252, 85, 165
+  - current obtainable
+13:
+- - FC111A
+  - 0, 93, 90, 1
+  - 252, 17, 26
+  - stitch dust
+- - FC222A
+  - 0, 87, 83, 1
+  - 252, 34, 42
+  - powder mark
+- - FC333A
+  - 0, 80, 77, 1
+  - 252, 51, 58
+  - hellish monkey
+- - FC444A
+  - 0, 73, 71, 1
+  - 252, 68, 74
+  - wall zippy
+- - FC555A
+  - 0, 66, 64, 1
+  - 252, 85, 90
+  - hard-to-find wing
+17:
+- - FAC111
+  - 0, 23, 93, 2
+  - 250, 193, 17
+  - nerve nice
+- - FAC222
+  - 0, 22, 86, 2
+  - 250, 194, 34
+  - sprout walk
+- - FAC333
+  - 0, 22, 80, 2
+  - 250, 195, 51
+  - unbecoming suffer
+- - FAC444
+  - 0, 22, 73, 2
+  - 250, 196, 68
+  - baseball tire
+- - FAC555
+  - 0, 21, 66, 2
+  - 250, 197, 85
+  - ants moan
+19:
+- - F1CA11
+  - 0, 16, 93, 5
+  - 241, 202, 17
+  - spiteful sulky
+- - F2CA22
+  - 0, 17, 86, 5
+  - 242, 202, 34
+  - defective icy
+- - F3CA33
+  - 0, 17, 79, 5
+  - 243, 202, 51
+  - chew vase
+- - F4CA44
+  - 0, 17, 72, 4
+  - 244, 202, 68
+  - uncle wool
+- - F5CA55
+  - 0, 18, 65, 4
+  - 245, 202, 85
+  - son attach
+20:
+- - F1C1A1
+  - 0, 20, 33, 5
+  - 241, 193, 161
+  - loutish habitual
+- - F2C2A2
+  - 0, 20, 33, 5
+  - 242, 194, 162
+  - cobweb calculate
+- - F3C3A3
+  - 0, 20, 33, 5
+  - 243, 195, 163
+  - robust detect
+- - F4C4A4
+  - 0, 20, 33, 4
+  - 244, 196, 164
+  - deafening ask
+- - F5C5A5
+  - 0, 20, 33, 4
+  - 245, 197, 165
+  - madly onerous
+21:
+- - F1C11A
+  - 0, 20, 89, 5
+  - 241, 193, 26
+  - tall calculating
+- - F2C22A
+  - 0, 20, 83, 5
+  - 242, 194, 42
+  - suit bare
+- - F3C33A
+  - 0, 20, 76, 5
+  - 243, 195, 58
+  - tired instrument
+- - F4C44A
+  - 0, 20, 70, 4
+  - 244, 196, 74
+  - tent join
+- - F5C55A
+  - 0, 20, 63, 4
+  - 245, 197, 90
+  - announce mighty
+25:
+- - FA1C11
+  - 0, 89, 93, 2
+  - 250, 28, 17
+  - home cake
+- - FA2C22
+  - 0, 82, 86, 2
+  - 250, 44, 34
+  - impulse suit
+- - FA3C33
+  - 0, 76, 80, 2
+  - 250, 60, 51
+  - eager gate
+- - FA4C44
+  - 0, 70, 73, 2
+  - 250, 76, 68
+  - choke memorise
+- - FA5C55
+  - 0, 63, 66, 2
+  - 250, 92, 85
+  - sad flower
+26:
+- - F1AC11
+  - 0, 29, 93, 5
+  - 241, 172, 17
+  - internal argument
+- - F2AC22
+  - 0, 29, 86, 5
+  - 242, 172, 34
+  - dime applaud
+- - F3AC33
+  - 0, 29, 79, 5
+  - 243, 172, 51
+  - needy arrogant
+- - F4AC44
+  - 0, 30, 72, 4
+  - 244, 172, 68
+  - lewd secretive
+- - F5AC55
+  - 0, 30, 65, 4
+  - 245, 172, 85
+  - illegal inconclusive
+28:
+- - F11CA1
+  - 0, 88, 33, 5
+  - 241, 28, 161
+  - bouncy flat
+- - F22CA2
+  - 0, 82, 33, 5
+  - 242, 44, 162
+  - military pretend
+- - F33CA3
+  - 0, 75, 33, 5
+  - 243, 60, 163
+  - crush hole
+- - F44CA4
+  - 0, 69, 33, 4
+  - 244, 76, 164
+  - real fear
+- - F55CA5
+  - 0, 62, 33, 4
+  - 245, 92, 165
+  - jeans laughable
+29:
+- - F11C1A
+  - 0, 88, 89, 5
+  - 241, 28, 26
+  - tickle festive
+- - F22C2A
+  - 0, 82, 83, 5
+  - 242, 44, 42
+  - defiant meek
+- - F33C3A
+  - 0, 75, 76, 5
+  - 243, 60, 58
+  - hysterical little
+- - F44C4A
+  - 0, 69, 70, 4
+  - 244, 76, 74
+  - tense melt
+- - F55C5A
+  - 0, 62, 63, 4
+  - 245, 92, 90
+  - boorish dazzling
+33:
+- - FA11C1
+  - 0, 93, 23, 2
+  - 250, 17, 193
+  - purpose depend
+- - FA22C2
+  - 0, 86, 22, 2
+  - 250, 34, 194
+  - rotten wide
+- - FA33C3
+  - 0, 80, 22, 2
+  - 250, 51, 195
+  - beds verdant
+- - FA44C4
+  - 0, 73, 22, 2
+  - 250, 68, 196
+  - communicate guarantee
+- - FA55C5
+  - 0, 66, 21, 2
+  - 250, 85, 197
+  - guide shirt
+34:
+- - F1A1C1
+  - 0, 33, 20, 5
+  - 241, 161, 193
+  - nervous sticks
+- - F2A2C2
+  - 0, 33, 20, 5
+  - 242, 162, 194
+  - lazy ancient
+- - F3A3C3
+  - 0, 33, 20, 5
+  - 243, 163, 195
+  - sack jail
+- - F4A4C4
+  - 0, 33, 20, 4
+  - 244, 164, 196
+  - end close
+- - F5A5C5
+  - 0, 33, 20, 4
+  - 245, 165, 197
+  - comparison nine
+35:
+- - F11AC1
+  - 0, 89, 20, 5
+  - 241, 26, 193
+  - frightened theory
+- - F22AC2
+  - 0, 83, 20, 5
+  - 242, 42, 194
+  - crack ten
+- - F33AC3
+  - 0, 76, 20, 5
+  - 243, 58, 195
+  - woebegone stroke
+- - F44AC4
+  - 0, 70, 20, 4
+  - 244, 74, 196
+  - fascinated air
+- - F55AC5
+  - 0, 63, 20, 4
+  - 245, 90, 197
+  - man death
+37:
+- - F111CA
+  - 0, 93, 16, 5
+  - 241, 17, 202
+  - giants blot
+- - F222CA
+  - 0, 86, 17, 5
+  - 242, 34, 202
+  - accurate vein
+- - F333CA
+  - 0, 79, 17, 5
+  - 243, 51, 202
+  - aspiring belief
+- - F444CA
+  - 0, 72, 17, 4
+  - 244, 68, 202
+  - smile basketball
+- - F555CA
+  - 0, 65, 18, 4
+  - 245, 85, 202
+  - abashed weigh
+41:
+- - FA111C
+  - 0, 93, 89, 2
+  - 250, 17, 28
+  - magenta donkey
+- - FA222C
+  - 0, 86, 82, 2
+  - 250, 34, 44
+  - unwritten even
+- - FA333C
+  - 0, 80, 76, 2
+  - 250, 51, 60
+  - amusement wrestle
+- - FA444C
+  - 0, 73, 70, 2
+  - 250, 68, 76
+  - authority point
+- - FA555C
+  - 0, 66, 63, 2
+  - 250, 85, 92
+  - deeply walk
+42:
+- - F1A11C
+  - 0, 33, 88, 5
+  - 241, 161, 28
+  - discovery sheet
+- - F2A22C
+  - 0, 33, 82, 5
+  - 242, 162, 44
+  - neck fool
+- - F3A33C
+  - 0, 33, 75, 5
+  - 243, 163, 60
+  - interesting subtract
+- - F4A44C
+  - 0, 33, 69, 4
+  - 244, 164, 76
+  - painful zipper
+- - F5A55C
+  - 0, 33, 62, 4
+  - 245, 165, 92
+  - oranges loutish
+43:
+- - F11A1C
+  - 0, 89, 88, 5
+  - 241, 26, 28
+  - food soft
+- - F22A2C
+  - 0, 83, 82, 5
+  - 242, 42, 44
+  - nest sophisticated
+- - F33A3C
+  - 0, 76, 75, 5
+  - 243, 58, 60
+  - trouble clam
+- - F44A4C
+  - 0, 70, 69, 4
+  - 244, 74, 76
+  - flagrant tooth
+- - F55A5C
+  - 0, 63, 62, 4
+  - 245, 90, 92
+  - jog shocking
+44:
+- - F111AC
+  - 0, 93, 29, 5
+  - 241, 17, 172
+  - clap pump
+- - F222AC
+  - 0, 86, 29, 5
+  - 242, 34, 172
+  - psychotic milk
+- - F333AC
+  - 0, 79, 29, 5
+  - 243, 51, 172
+  - shock cough
+- - F444AC
+  - 0, 72, 30, 4
+  - 244, 68, 172
+  - plants orange
+- - F555AC
+  - 0, 65, 30, 4
+  - 245, 85, 172
+  - invite brush
+66:
+- - CFA111
+  - 0, 22, 92, 19
+  - 207, 161, 17
+  - hollow grip
+- - CFA222
+  - 0, 22, 84, 19
+  - 207, 162, 34
+  - obeisant throat
+- - CFA333
+  - 0, 21, 75, 19
+  - 207, 163, 51
+  - field sour
+- - CFA444
+  - 0, 21, 67, 19
+  - 207, 164, 68
+  - teeny-tiny wash
+- - CFA555
+  - 0, 20, 59, 19
+  - 207, 165, 85
+  - exciting perfect
+67:
+- - CF1A11
+  - 0, 87, 92, 19
+  - 207, 26, 17
+  - pocket mere
+- - CF2A22
+  - 0, 80, 84, 19
+  - 207, 42, 34
+  - rake hilarious
+- - CF3A33
+  - 0, 72, 75, 19
+  - 207, 58, 51
+  - crow branch
+- - CF4A44
+  - 0, 64, 67, 19
+  - 207, 74, 68
+  - dashing deceive
+- - CF5A55
+  - 0, 57, 59, 19
+  - 207, 90, 85
+  - mundane silent
+68:
+- - CF11A1
+  - 0, 92, 22, 19
+  - 207, 17, 161
+  - trousers stale
+- - CF22A2
+  - 0, 84, 22, 19
+  - 207, 34, 162
+  - end mass
+- - CF33A3
+  - 0, 75, 21, 19
+  - 207, 51, 163
+  - elbow fabulous
+- - CF44A4
+  - 0, 67, 21, 19
+  - 207, 68, 164
+  - cracker stop
+- - CF55A5
+  - 0, 59, 20, 19
+  - 207, 85, 165
+  - nebulous fresh
+69:
+- - CF111A
+  - 0, 92, 87, 19
+  - 207, 17, 26
+  - change milky
+- - CF222A
+  - 0, 84, 80, 19
+  - 207, 34, 42
+  - treat print
+- - CF333A
+  - 0, 75, 72, 19
+  - 207, 51, 58
+  - summer adorable
+- - CF444A
+  - 0, 67, 64, 19
+  - 207, 68, 74
+  - borrow drink
+- - CF555A
+  - 0, 59, 57, 19
+  - 207, 85, 90
+  - fearless complain
+80:
+- - AFC111
+  - 9, 0, 91, 24
+  - 175, 193, 17
+  - disapprove testy
+- - AFC222
+  - 10, 0, 82, 24
+  - 175, 194, 34
+  - brawny education
+- - AFC333
+  - 10, 0, 74, 24
+  - 175, 195, 51
+  - gaudy drain
+- - AFC444
+  - 11, 0, 65, 23
+  - 175, 196, 68
+  - battle actually
+- - AFC555
+  - 11, 0, 57, 23
+  - 175, 197, 85
+  - bent rejoice
+83:
+- - 1FCA11
+  - 85, 0, 92, 21
+  - 31, 202, 17
+  - changeable raise
+- - 2FCA22
+  - 77, 0, 83, 21
+  - 47, 202, 34
+  - care fall
+- - 3FCA33
+  - 69, 0, 75, 21
+  - 63, 202, 51
+  - trap year
+- - 4FCA44
+  - 61, 0, 66, 21
+  - 79, 202, 68
+  - curvy voracious
+- - 5FCA55
+  - 53, 0, 58, 21
+  - 95, 202, 85
+  - aboriginal watch
+84:
+- - 1FC1A1
+  - 84, 0, 17, 24
+  - 31, 193, 161
+  - root flowery
+- - 2FC2A2
+  - 76, 0, 16, 24
+  - 47, 194, 162
+  - alluring married
+- - 3FC3A3
+  - 68, 0, 16, 24
+  - 63, 195, 163
+  - sleep kindly
+- - 4FC4A4
+  - 60, 0, 16, 23
+  - 79, 196, 164
+  - print dependent
+- - 5FC5A5
+  - 52, 0, 16, 23
+  - 95, 197, 165
+  - trick cart
+85:
+- - 1FC11A
+  - 84, 0, 87, 24
+  - 31, 193, 26
+  - six behavior
+- - 2FC22A
+  - 76, 0, 78, 24
+  - 47, 194, 42
+  - list angry
+- - 3FC33A
+  - 68, 0, 70, 24
+  - 63, 195, 58
+  - delay mate
+- - 4FC44A
+  - 60, 0, 62, 23
+  - 79, 196, 74
+  - worried head
+- - 5FC55A
+  - 52, 0, 54, 23
+  - 95, 197, 90
+  - classy acrid
+88:
+- - AF1C11
+  - 0, 84, 90, 31
+  - 175, 28, 17
+  - fool ossified
+- - AF2C22
+  - 0, 75, 81, 31
+  - 175, 44, 34
+  - soap far-flung
+- - AF3C33
+  - 0, 66, 71, 31
+  - 175, 60, 51
+  - smoke fence
+- - AF4C44
+  - 0, 57, 61, 31
+  - 175, 76, 68
+  - determined wood
+- - AF5C55
+  - 0, 47, 51, 31
+  - 175, 92, 85
+  - fork jelly
+90:
+- - 1FAC11
+  - 82, 0, 90, 33
+  - 31, 172, 17
+  - amazing plot
+- - 2FAC22
+  - 73, 0, 80, 33
+  - 47, 172, 34
+  - lively three
+- - 3FAC33
+  - 63, 0, 70, 33
+  - 63, 172, 51
+  - rob rescue
+- - 4FAC44
+  - 54, 0, 60, 33
+  - 79, 172, 68
+  - offbeat post
+- - 5FAC55
+  - 45, 0, 51, 33
+  - 95, 172, 85
+  - leather increase
+92:
+- - 1F1CA1
+  - 81, 83, 0, 37
+  - 31, 28, 161
+  - pleasure annoy
+- - 2F2CA2
+  - 71, 73, 0, 36
+  - 47, 44, 162
+  - murder produce
+- - 3F3CA3
+  - 61, 63, 0, 36
+  - 63, 60, 163
+  - utter fuzzy
+- - 4F4CA4
+  - 52, 54, 0, 36
+  - 79, 76, 164
+  - superb approval
+- - 5F5CA5
+  - 42, 44, 0, 35
+  - 95, 92, 165
+  - shade question
+93:
+- - 1F1C1A
+  - 0, 10, 16, 88
+  - 31, 28, 26
+  - run cover
+- - 2F2C2A
+  - 0, 6, 11, 82
+  - 47, 44, 42
+  - faded need
+- - 3F3C3A
+  - 0, 5, 8, 75
+  - 63, 60, 58
+  - available enormous
+- - 4F4C4A
+  - 0, 4, 6, 69
+  - 79, 76, 74
+  - tow argue
+- - 5F5C5A
+  - 0, 3, 5, 63
+  - 95, 92, 90
+  - able slave
+96:
+- - AF11C1
+  - 9, 91, 0, 24
+  - 175, 17, 193
+  - feeble comb
+- - AF22C2
+  - 10, 82, 0, 24
+  - 175, 34, 194
+  - political bright
+- - AF33C3
+  - 10, 74, 0, 24
+  - 175, 51, 195
+  - blind quickest
+- - AF44C4
+  - 11, 65, 0, 23
+  - 175, 68, 196
+  - rescue nebulous
+- - AF55C5
+  - 11, 57, 0, 23
+  - 175, 85, 197
+  - subdued standing
+98:
+- - 1FA1C1
+  - 84, 17, 0, 24
+  - 31, 161, 193
+  - servant vacuous
+- - 2FA2C2
+  - 76, 16, 0, 24
+  - 47, 162, 194
+  - visit metal
+- - 3FA3C3
+  - 68, 16, 0, 24
+  - 63, 163, 195
+  - hole cannon
+- - 4FA4C4
+  - 60, 16, 0, 23
+  - 79, 164, 196
+  - exclusive produce
+- - 5FA5C5
+  - 52, 16, 0, 23
+  - 95, 165, 197
+  - high-pitched sack
+99:
+- - 1F1AC1
+  - 84, 87, 0, 24
+  - 31, 26, 193
+  - government scrape
+- - 2F2AC2
+  - 76, 78, 0, 24
+  - 47, 42, 194
+  - squirrel astonishing
+- - 3F3AC3
+  - 68, 70, 0, 24
+  - 63, 58, 195
+  - carpenter bewildered
+- - 4F4AC4
+  - 60, 62, 0, 23
+  - 79, 74, 196
+  - fuzzy grandmother
+- - 5F5AC5
+  - 52, 54, 0, 23
+  - 95, 90, 197
+  - cook writing
+101:
+- - 1F11CA
+  - 85, 92, 0, 21
+  - 31, 17, 202
+  - juvenile racial
+- - 2F22CA
+  - 77, 83, 0, 21
+  - 47, 34, 202
+  - harsh foamy
+- - 3F33CA
+  - 69, 75, 0, 21
+  - 63, 51, 202
+  - hot learn
+- - 4F44CA
+  - 61, 66, 0, 21
+  - 79, 68, 202
+  - industry ritzy
+- - 5F55CA
+  - 53, 58, 0, 21
+  - 95, 85, 202
+  - amusing courageous
+104:
+- - AF111C
+  - 0, 90, 84, 31
+  - 175, 17, 28
+  - youthful wound
+- - AF222C
+  - 0, 81, 75, 31
+  - 175, 34, 44
+  - cowardly level
+- - AF333C
+  - 0, 71, 66, 31
+  - 175, 51, 60
+  - good glistening
+- - AF444C
+  - 0, 61, 57, 31
+  - 175, 68, 76
+  - connect cemetery
+- - AF555C
+  - 0, 51, 47, 31
+  - 175, 85, 92
+  - continue mindless
+106:
+- - 1FA11C
+  - 81, 0, 83, 37
+  - 31, 161, 28
+  - friction brief
+- - 2FA22C
+  - 71, 0, 73, 36
+  - 47, 162, 44
+  - teeny request
+- - 3FA33C
+  - 61, 0, 63, 36
+  - 63, 163, 60
+  - satisfying oceanic
+- - 4FA44C
+  - 52, 0, 54, 36
+  - 79, 164, 76
+  - fence lackadaisical
+- - 5FA55C
+  - 42, 0, 44, 35
+  - 95, 165, 92
+  - trot mother
+107:
+- - 1F1A1C
+  - 0, 16, 10, 88
+  - 31, 26, 28
+  - waste nutty
+- - 2F2A2C
+  - 0, 11, 6, 82
+  - 47, 42, 44
+  - juicy position
+- - 3F3A3C
+  - 0, 8, 5, 75
+  - 63, 58, 60
+  - watery tangy
+- - 4F4A4C
+  - 0, 6, 4, 69
+  - 79, 74, 76
+  - fire inform
+- - 5F5A5C
+  - 0, 5, 3, 63
+  - 95, 90, 92
+  - toothbrush weak
+108:
+- - 1F11AC
+  - 82, 90, 0, 33
+  - 31, 17, 172
+  - apparatus red
+- - 2F22AC
+  - 73, 80, 0, 33
+  - 47, 34, 172
+  - range nasty
+- - 3F33AC
+  - 63, 70, 0, 33
+  - 63, 51, 172
+  - ill-fated muddled
+- - 4F44AC
+  - 54, 60, 0, 33
+  - 79, 68, 172
+  - previous weary
+- - 5F55AC
+  - 45, 51, 0, 33
+  - 95, 85, 172
+  - branch box
+129:
+- - CAF111
+  - 16, 0, 93, 5
+  - 202, 241, 17
+  - car vast
+- - CAF222
+  - 17, 0, 86, 5
+  - 202, 242, 34
+  - border grotesque
+- - CAF333
+  - 17, 0, 79, 5
+  - 202, 243, 51
+  - cannon pump
+- - CAF444
+  - 17, 0, 72, 4
+  - 202, 244, 68
+  - describe nervous
+- - CAF555
+  - 18, 0, 65, 4
+  - 202, 245, 85
+  - bulb carpenter
+131:
+- - C1FA11
+  - 23, 0, 93, 2
+  - 193, 250, 17
+  - parched taste
+- - C2FA22
+  - 22, 0, 86, 2
+  - 194, 250, 34
+  - page unbecoming
+- - C3FA33
+  - 22, 0, 80, 2
+  - 195, 250, 51
+  - evanescent tank
+- - C4FA44
+  - 22, 0, 73, 2
+  - 196, 250, 68
+  - lunchroom skinny
+- - C5FA55
+  - 21, 0, 66, 2
+  - 197, 250, 85
+  - annoy wise
+132:
+- - C1F1A1
+  - 20, 0, 33, 5
+  - 193, 241, 161
+  - stare learned
+- - C2F2A2
+  - 20, 0, 33, 5
+  - 194, 242, 162
+  - spell excellent
+- - C3F3A3
+  - 20, 0, 33, 5
+  - 195, 243, 163
+  - obtainable helpless
+- - C4F4A4
+  - 20, 0, 33, 4
+  - 196, 244, 164
+  - silver buzz
+- - C5F5A5
+  - 20, 0, 33, 4
+  - 197, 245, 165
+  - snore sore
+133:
+- - C1F11A
+  - 20, 0, 89, 5
+  - 193, 241, 26
+  - arrange adamant
+- - C2F22A
+  - 20, 0, 83, 5
+  - 194, 242, 42
+  - kaput grouchy
+- - C3F33A
+  - 20, 0, 76, 5
+  - 195, 243, 58
+  - unused many
+- - C4F44A
+  - 20, 0, 70, 4
+  - 196, 244, 74
+  - puny amuse
+- - C5F55A
+  - 20, 0, 63, 4
+  - 197, 245, 90
+  - cup witty
+136:
+- - ACF111
+  - 29, 0, 93, 5
+  - 172, 241, 17
+  - decision stir
+- - ACF222
+  - 29, 0, 86, 5
+  - 172, 242, 34
+  - powerful efficient
+- - ACF333
+  - 29, 0, 79, 5
+  - 172, 243, 51
+  - event rings
+- - ACF444
+  - 30, 0, 72, 4
+  - 172, 244, 68
+  - receive gun
+- - ACF555
+  - 30, 0, 65, 4
+  - 172, 245, 85
+  - ruddy majestic
+139:
+- - 1CFA11
+  - 89, 0, 93, 2
+  - 28, 250, 17
+  - compare tedious
+- - 2CFA22
+  - 82, 0, 86, 2
+  - 44, 250, 34
+  - cruel malicious
+- - 3CFA33
+  - 76, 0, 80, 2
+  - 60, 250, 51
+  - channel last
+- - 4CFA44
+  - 70, 0, 73, 2
+  - 76, 250, 68
+  - brave accept
+- - 5CFA55
+  - 63, 0, 66, 2
+  - 92, 250, 85
+  - preach green
+140:
+- - 1CF1A1
+  - 88, 0, 33, 5
+  - 28, 241, 161
+  - group basket
+- - 2CF2A2
+  - 82, 0, 33, 5
+  - 44, 242, 162
+  - suck signal
+- - 3CF3A3
+  - 75, 0, 33, 5
+  - 60, 243, 163
+  - nation dreary
+- - 4CF4A4
+  - 69, 0, 33, 4
+  - 76, 244, 164
+  - tiger terrible
+- - 5CF5A5
+  - 62, 0, 33, 4
+  - 92, 245, 165
+  - hanging attractive
+141:
+- - 1CF11A
+  - 88, 0, 89, 5
+  - 28, 241, 26
+  - country physical
+- - 2CF22A
+  - 82, 0, 83, 5
+  - 44, 242, 42
+  - vase orange
+- - 3CF33A
+  - 75, 0, 76, 5
+  - 60, 243, 58
+  - swim live
+- - 4CF44A
+  - 69, 0, 70, 4
+  - 76, 244, 74
+  - stimulating water
+- - 5CF55A
+  - 62, 0, 63, 4
+  - 92, 245, 90
+  - happen descriptive
+152:
+- - A1FC11
+  - 36, 0, 93, 1
+  - 161, 252, 17
+  - property rainy
+- - A2FC22
+  - 36, 0, 87, 1
+  - 162, 252, 34
+  - empty men
+- - A3FC33
+  - 35, 0, 80, 1
+  - 163, 252, 51
+  - fear comparison
+- - A4FC44
+  - 35, 0, 73, 1
+  - 164, 252, 68
+  - easy gainful
+- - A5FC55
+  - 35, 0, 66, 1
+  - 165, 252, 85
+  - longing tasty
+153:
+- - 1AFC11
+  - 90, 0, 93, 1
+  - 26, 252, 17
+  - necessary handsomely
+- - 2AFC22
+  - 83, 0, 87, 1
+  - 42, 252, 34
+  - mind kick
+- - 3AFC33
+  - 77, 0, 80, 1
+  - 58, 252, 51
+  - zoom tremendous
+- - 4AFC44
+  - 71, 0, 73, 1
+  - 74, 252, 68
+  - capricious library
+- - 5AFC55
+  - 64, 0, 66, 1
+  - 90, 252, 85
+  - pull attract
+156:
+- - 11FCA1
+  - 93, 0, 36, 1
+  - 17, 252, 161
+  - misty turn
+- - 22FCA2
+  - 87, 0, 36, 1
+  - 34, 252, 162
+  - childlike profuse
+- - 33FCA3
+  - 80, 0, 35, 1
+  - 51, 252, 163
+  - aboard lush
+- - 44FCA4
+  - 73, 0, 35, 1
+  - 68, 252, 164
+  - flashy offer
+- - 55FCA5
+  - 66, 0, 35, 1
+  - 85, 252, 165
+  - disgusting sink
+157:
+- - 11FC1A
+  - 93, 0, 90, 1
+  - 17, 252, 26
+  - start vulgar
+- - 22FC2A
+  - 87, 0, 83, 1
+  - 34, 252, 42
+  - coil quilt
+- - 33FC3A
+  - 80, 0, 77, 1
+  - 51, 252, 58
+  - spiky governor
+- - 44FC4A
+  - 73, 0, 71, 1
+  - 68, 252, 74
+  - possessive tense
+- - 55FC5A
+  - 66, 0, 64, 1
+  - 85, 252, 90
+  - spectacular maddening
+160:
+- - A1F1C1
+  - 33, 0, 20, 5
+  - 161, 241, 193
+  - thin unknown
+- - A2F2C2
+  - 33, 0, 20, 5
+  - 162, 242, 194
+  - letter wreck
+- - A3F3C3
+  - 33, 0, 20, 5
+  - 163, 243, 195
+  - caring thick
+- - A4F4C4
+  - 33, 0, 20, 4
+  - 164, 244, 196
+  - machine eggnog
+- - A5F5C5
+  - 33, 0, 20, 4
+  - 165, 245, 197
+  - sense exultant
+161:
+- - 1AF1C1
+  - 89, 0, 20, 5
+  - 26, 241, 193
+  - grotesque toys
+- - 2AF2C2
+  - 83, 0, 20, 5
+  - 42, 242, 194
+  - black moaning
+- - 3AF3C3
+  - 76, 0, 20, 5
+  - 58, 243, 195
+  - sparkling wet
+- - 4AF4C4
+  - 70, 0, 20, 4
+  - 74, 244, 196
+  - loud yam
+- - 5AF5C5
+  - 63, 0, 20, 4
+  - 90, 245, 197
+  - discussion cracker
+163:
+- - 11FAC1
+  - 93, 0, 23, 2
+  - 17, 250, 193
+  - insidious undress
+- - 22FAC2
+  - 86, 0, 22, 2
+  - 34, 250, 194
+  - tremble current
+- - 33FAC3
+  - 80, 0, 22, 2
+  - 51, 250, 195
+  - helpless sneaky
+- - 44FAC4
+  - 73, 0, 22, 2
+  - 68, 250, 196
+  - unsuitable slow
+- - 55FAC5
+  - 66, 0, 21, 2
+  - 85, 250, 197
+  - close aunt
+165:
+- - 11F1CA
+  - 93, 0, 16, 5
+  - 17, 241, 202
+  - drunk minor
+- - 22F2CA
+  - 86, 0, 17, 5
+  - 34, 242, 202
+  - woman confused
+- - 33F3CA
+  - 79, 0, 17, 5
+  - 51, 243, 202
+  - water murky
+- - 44F4CA
+  - 72, 0, 17, 4
+  - 68, 244, 202
+  - vacuous bottle
+- - 55F5CA
+  - 65, 0, 18, 4
+  - 85, 245, 202
+  - remarkable wriggle
+168:
+- - A1F11C
+  - 33, 0, 88, 5
+  - 161, 241, 28
+  - crabby silent
+- - A2F22C
+  - 33, 0, 82, 5
+  - 162, 242, 44
+  - kick sneeze
+- - A3F33C
+  - 33, 0, 75, 5
+  - 163, 243, 60
+  - ball capable
+- - A4F44C
+  - 33, 0, 69, 4
+  - 164, 244, 76
+  - club offer
+- - A5F55C
+  - 33, 0, 62, 4
+  - 165, 245, 92
+  - hand fallacious
+169:
+- - 1AF11C
+  - 89, 0, 88, 5
+  - 26, 241, 28
+  - crook dare
+- - 2AF22C
+  - 83, 0, 82, 5
+  - 42, 242, 44
+  - iron mature
+- - 3AF33C
+  - 76, 0, 75, 5
+  - 58, 243, 60
+  - glorious amuck
+- - 4AF44C
+  - 70, 0, 69, 4
+  - 74, 244, 76
+  - noiseless deserve
+- - 5AF55C
+  - 63, 0, 62, 4
+  - 90, 245, 92
+  - unpack bitter
+171:
+- - 11FA1C
+  - 93, 0, 89, 2
+  - 17, 250, 28
+  - dad towering
+- - 22FA2C
+  - 86, 0, 82, 2
+  - 34, 250, 44
+  - trees cooing
+- - 33FA3C
+  - 80, 0, 76, 2
+  - 51, 250, 60
+  - art alcoholic
+- - 44FA4C
+  - 73, 0, 70, 2
+  - 68, 250, 76
+  - wonder duck
+- - 55FA5C
+  - 66, 0, 63, 2
+  - 85, 250, 92
+  - cause hook
+172:
+- - 11F1AC
+  - 93, 0, 29, 5
+  - 17, 241, 172
+  - seal dust
+- - 22F2AC
+  - 86, 0, 29, 5
+  - 34, 242, 172
+  - burn kaput
+- - 33F3AC
+  - 79, 0, 29, 5
+  - 51, 243, 172
+  - use dress
+- - 44F4AC
+  - 72, 0, 30, 4
+  - 68, 244, 172
+  - heartbreaking camera
+- - 55F5AC
+  - 65, 0, 30, 4
+  - 85, 245, 172
+  - cute excite
+193:
+- - CA1F11
+  - 0, 85, 92, 21
+  - 202, 31, 17
+  - license multiply
+- - CA2F22
+  - 0, 77, 83, 21
+  - 202, 47, 34
+  - shrill disapprove
+- - CA3F33
+  - 0, 69, 75, 21
+  - 202, 63, 51
+  - unknown premium
+- - CA4F44
+  - 0, 61, 66, 21
+  - 202, 79, 68
+  - stem deeply
+- - CA5F55
+  - 0, 53, 58, 21
+  - 202, 95, 85
+  - equable reading
+194:
+- - C1AF11
+  - 0, 9, 91, 24
+  - 193, 175, 17
+  - position crow
+- - C2AF22
+  - 0, 10, 82, 24
+  - 194, 175, 34
+  - holistic please
+- - C3AF33
+  - 0, 10, 74, 24
+  - 195, 175, 51
+  - intend cable
+- - C4AF44
+  - 0, 11, 65, 23
+  - 196, 175, 68
+  - vest horses
+- - C5AF55
+  - 0, 11, 57, 23
+  - 197, 175, 85
+  - petite dusty
+196:
+- - C11FA1
+  - 0, 84, 17, 24
+  - 193, 31, 161
+  - point happen
+- - C22FA2
+  - 0, 76, 16, 24
+  - 194, 47, 162
+  - discreet squealing
+- - C33FA3
+  - 0, 68, 16, 24
+  - 195, 63, 163
+  - dead elegant
+- - C44FA4
+  - 0, 60, 16, 23
+  - 196, 79, 164
+  - assorted aberrant
+- - C55FA5
+  - 0, 52, 16, 23
+  - 197, 95, 165
+  - wiggly tongue
+197:
+- - C11F1A
+  - 0, 84, 87, 24
+  - 193, 31, 26
+  - wriggle finger
+- - C22F2A
+  - 0, 76, 78, 24
+  - 194, 47, 42
+  - trains string
+- - C33F3A
+  - 0, 68, 70, 24
+  - 195, 63, 58
+  - cautious umbrella
+- - C44F4A
+  - 0, 60, 62, 23
+  - 196, 79, 74
+  - extra-large scintillating
+- - C55F5A
+  - 0, 52, 54, 23
+  - 197, 95, 90
+  - ragged jog
+200:
+- - AC1F11
+  - 0, 82, 90, 33
+  - 172, 31, 17
+  - camp secretary
+- - AC2F22
+  - 0, 73, 80, 33
+  - 172, 47, 34
+  - stuff dirty
+- - AC3F33
+  - 0, 63, 70, 33
+  - 172, 63, 51
+  - long-term protest
+- - AC4F44
+  - 0, 54, 60, 33
+  - 172, 79, 68
+  - rock rest
+- - AC5F55
+  - 0, 45, 51, 33
+  - 172, 95, 85
+  - switch inquisitive
+202:
+- - 1CAF11
+  - 84, 0, 90, 31
+  - 28, 175, 17
+  - cent thinkable
+- - 2CAF22
+  - 75, 0, 81, 31
+  - 44, 175, 34
+  - pretend therapeutic
+- - 3CAF33
+  - 66, 0, 71, 31
+  - 60, 175, 51
+  - ocean callous
+- - 4CAF44
+  - 57, 0, 61, 31
+  - 76, 175, 68
+  - earthquake romantic
+- - 5CAF55
+  - 47, 0, 51, 31
+  - 92, 175, 85
+  - succeed sense
+204:
+- - 1C1FA1
+  - 83, 81, 0, 37
+  - 28, 31, 161
+  - ill-informed spring
+- - 2C2FA2
+  - 73, 71, 0, 36
+  - 44, 47, 162
+  - flawless dull
+- - 3C3FA3
+  - 63, 61, 0, 36
+  - 60, 63, 163
+  - farm wander
+- - 4C4FA4
+  - 54, 52, 0, 36
+  - 76, 79, 164
+  - office stay
+- - 5C5FA5
+  - 44, 42, 0, 35
+  - 92, 95, 165
+  - tough obeisant
+205:
+- - 1C1F1A
+  - 10, 0, 16, 88
+  - 28, 31, 26
+  - delirious aboard
+- - 2C2F2A
+  - 6, 0, 11, 82
+  - 44, 47, 42
+  - pine sister
+- - 3C3F3A
+  - 5, 0, 8, 75
+  - 60, 63, 58
+  - shop troubled
+- - 4C4F4A
+  - 4, 0, 6, 69
+  - 76, 79, 74
+  - pale bite
+- - 5C5F5A
+  - 3, 0, 5, 63
+  - 92, 95, 90
+  - guiltless road
+208:
+- - A1CF11
+  - 22, 0, 92, 19
+  - 161, 207, 17
+  - unique smile
+- - A2CF22
+  - 22, 0, 84, 19
+  - 162, 207, 34
+  - tumble cold
+- - A3CF33
+  - 21, 0, 75, 19
+  - 163, 207, 51
+  - thaw worried
+- - A4CF44
+  - 21, 0, 67, 19
+  - 164, 207, 68
+  - cave linen
+- - A5CF55
+  - 20, 0, 59, 19
+  - 165, 207, 85
+  - spark care
+209:
+- - 1ACF11
+  - 87, 0, 92, 19
+  - 26, 207, 17
+  - blush hammer
+- - 2ACF22
+  - 80, 0, 84, 19
+  - 42, 207, 34
+  - spoil flood
+- - 3ACF33
+  - 72, 0, 75, 19
+  - 58, 207, 51
+  - lettuce refuse
+- - 4ACF44
+  - 64, 0, 67, 19
+  - 74, 207, 68
+  - type prevent
+- - 5ACF55
+  - 57, 0, 59, 19
+  - 90, 207, 85
+  - pancake march
+212:
+- - 11CFA1
+  - 92, 0, 22, 19
+  - 17, 207, 161
+  - unit acoustics
+- - 22CFA2
+  - 84, 0, 22, 19
+  - 34, 207, 162
+  - zoo ubiquitous
+- - 33CFA3
+  - 75, 0, 21, 19
+  - 51, 207, 163
+  - boring discover
+- - 44CFA4
+  - 67, 0, 21, 19
+  - 68, 207, 164
+  - desire rake
+- - 55CFA5
+  - 59, 0, 20, 19
+  - 85, 207, 165
+  - serious experience
+213:
+- - 11CF1A
+  - 92, 0, 87, 19
+  - 17, 207, 26
+  - injure thank
+- - 22CF2A
+  - 84, 0, 80, 19
+  - 34, 207, 42
+  - form giddy
+- - 33CF3A
+  - 75, 0, 72, 19
+  - 51, 207, 58
+  - representative leg
+- - 44CF4A
+  - 67, 0, 64, 19
+  - 68, 207, 74
+  - alleged jobless
+- - 55CF5A
+  - 59, 0, 57, 19
+  - 85, 207, 90
+  - wave graceful
+224:
+- - A11FC1
+  - 17, 84, 0, 24
+  - 161, 31, 193
+  - bored obsolete
+- - A22FC2
+  - 16, 76, 0, 24
+  - 162, 47, 194
+  - disturbed tender
+- - A33FC3
+  - 16, 68, 0, 24
+  - 163, 63, 195
+  - handy sheep
+- - A44FC4
+  - 16, 60, 0, 23
+  - 164, 79, 196
+  - hurried regret
+- - A55FC5
+  - 16, 52, 0, 23
+  - 165, 95, 197
+  - accidental desk
+225:
+- - 1A1FC1
+  - 87, 84, 0, 24
+  - 26, 31, 193
+  - x-ray bumpy
+- - 2A2FC2
+  - 78, 76, 0, 24
+  - 42, 47, 194
+  - coal challenge
+- - 3A3FC3
+  - 70, 68, 0, 24
+  - 58, 63, 195
+  - mine chess
+- - 4A4FC4
+  - 62, 60, 0, 23
+  - 74, 79, 196
+  - coast cows
+- - 5A5FC5
+  - 54, 52, 0, 23
+  - 90, 95, 197
+  - paper books
+226:
+- - 11AFC1
+  - 91, 9, 0, 24
+  - 17, 175, 193
+  - questionable productive
+- - 22AFC2
+  - 82, 10, 0, 24
+  - 34, 175, 194
+  - peace soup
+- - 33AFC3
+  - 74, 10, 0, 24
+  - 51, 175, 195
+  - help punishment
+- - 44AFC4
+  - 65, 11, 0, 23
+  - 68, 175, 196
+  - throat wandering
+- - 55AFC5
+  - 57, 11, 0, 23
+  - 85, 175, 197
+  - fog stone
+229:
+- - 111FCA
+  - 92, 85, 0, 21
+  - 17, 31, 202
+  - learn jagged
+- - 222FCA
+  - 83, 77, 0, 21
+  - 34, 47, 202
+  - elegant scribble
+- - 333FCA
+  - 75, 69, 0, 21
+  - 51, 63, 202
+  - spark huge
+- - 444FCA
+  - 66, 61, 0, 21
+  - 68, 79, 202
+  - splendid guitar
+- - 555FCA
+  - 58, 53, 0, 21
+  - 85, 95, 202
+  - recondite brash
+232:
+- - A11F1C
+  - 0, 81, 83, 37
+  - 161, 31, 28
+  - digestion tidy
+- - A22F2C
+  - 0, 71, 73, 36
+  - 162, 47, 44
+  - fortunate insurance
+- - A33F3C
+  - 0, 61, 63, 36
+  - 163, 63, 60
+  - violet spark
+- - A44F4C
+  - 0, 52, 54, 36
+  - 164, 79, 76
+  - driving crawl
+- - A55F5C
+  - 0, 42, 44, 35
+  - 165, 95, 92
+  - deadpan square
+233:
+- - 1A1F1C
+  - 16, 0, 10, 88
+  - 26, 31, 28
+  - matter zephyr
+- - 2A2F2C
+  - 11, 0, 6, 82
+  - 42, 47, 44
+  - tame stain
+- - 3A3F3C
+  - 8, 0, 5, 75
+  - 58, 63, 60
+  - frog divide
+- - 4A4F4C
+  - 6, 0, 4, 69
+  - 74, 79, 76
+  - imperfect eyes
+- - 5A5F5C
+  - 5, 0, 3, 63
+  - 90, 95, 92
+  - wooden tree
+234:
+- - 11AF1C
+  - 90, 0, 84, 31
+  - 17, 175, 28
+  - plain shade
+- - 22AF2C
+  - 81, 0, 75, 31
+  - 34, 175, 44
+  - aromatic peace
+- - 33AF3C
+  - 71, 0, 66, 31
+  - 51, 175, 60
+  - mountain carve
+- - 44AF4C
+  - 61, 0, 57, 31
+  - 68, 175, 76
+  - apparel division
+- - 55AF5C
+  - 51, 0, 47, 31
+  - 85, 175, 92
+  - rifle messy
+236:
+- - 111FAC
+  - 90, 82, 0, 33
+  - 17, 31, 172
+  - melt narrow
+- - 222FAC
+  - 80, 73, 0, 33
+  - 34, 47, 172
+  - camp exercise
+- - 333FAC
+  - 70, 63, 0, 33
+  - 51, 63, 172
+  - glass record
+- - 444FAC
+  - 60, 54, 0, 33
+  - 68, 79, 172
+  - moor threatening
+- - 555FAC
+  - 51, 45, 0, 33
+  - 85, 95, 172
+  - noxious hurried
+257:
+- - CA11F1
+  - 16, 93, 0, 5
+  - 202, 17, 241
+  - level parched
+- - CA22F2
+  - 17, 86, 0, 5
+  - 202, 34, 242
+  - efficacious shut
+- - CA33F3
+  - 17, 79, 0, 5
+  - 202, 51, 243
+  - old-fashioned elastic
+- - CA44F4
+  - 17, 72, 0, 4
+  - 202, 68, 244
+  - fancy free
+- - CA55F5
+  - 18, 65, 0, 4
+  - 202, 85, 245
+  - party look
+258:
+- - C1A1F1
+  - 20, 33, 0, 5
+  - 193, 161, 241
+  - sisters rude
+- - C2A2F2
+  - 20, 33, 0, 5
+  - 194, 162, 242
+  - befitting invent
+- - C3A3F3
+  - 20, 33, 0, 5
+  - 195, 163, 243
+  - smooth well-groomed
+- - C4A4F4
+  - 20, 33, 0, 4
+  - 196, 164, 244
+  - motion harsh
+- - C5A5F5
+  - 20, 33, 0, 4
+  - 197, 165, 245
+  - yard nose
+259:
+- - C11AF1
+  - 20, 89, 0, 5
+  - 193, 26, 241
+  - clumsy plucky
+- - C22AF2
+  - 20, 83, 0, 5
+  - 194, 42, 242
+  - broad blush
+- - C33AF3
+  - 20, 76, 0, 5
+  - 195, 58, 243
+  - adhesive shave
+- - C44AF4
+  - 20, 70, 0, 4
+  - 196, 74, 244
+  - concentrate knowing
+- - C55AF5
+  - 20, 63, 0, 4
+  - 197, 90, 245
+  - selfish middle
+261:
+- - C111FA
+  - 23, 93, 0, 2
+  - 193, 17, 250
+  - cry wanting
+- - C222FA
+  - 22, 86, 0, 2
+  - 194, 34, 250
+  - trucks adjustment
+- - C333FA
+  - 22, 80, 0, 2
+  - 195, 51, 250
+  - draconian whimsical
+- - C444FA
+  - 22, 73, 0, 2
+  - 196, 68, 250
+  - romantic longing
+- - C555FA
+  - 21, 66, 0, 2
+  - 197, 85, 250
+  - window breezy
+264:
+- - AC11F1
+  - 29, 93, 0, 5
+  - 172, 17, 241
+  - harass miss
+- - AC22F2
+  - 29, 86, 0, 5
+  - 172, 34, 242
+  - sun well-off
+- - AC33F3
+  - 29, 79, 0, 5
+  - 172, 51, 243
+  - silky sprout
+- - AC44F4
+  - 30, 72, 0, 4
+  - 172, 68, 244
+  - veil coherent
+- - AC55F5
+  - 30, 65, 0, 4
+  - 172, 85, 245
+  - kneel ill-fated
+266:
+- - 1CA1F1
+  - 88, 33, 0, 5
+  - 28, 161, 241
+  - steel sweltering
+- - 2CA2F2
+  - 82, 33, 0, 5
+  - 44, 162, 242
+  - dress unnatural
+- - 3CA3F3
+  - 75, 33, 0, 5
+  - 60, 163, 243
+  - rat cycle
+- - 4CA4F4
+  - 69, 33, 0, 4
+  - 76, 164, 244
+  - aquatic five
+- - 5CA5F5
+  - 62, 33, 0, 4
+  - 92, 165, 245
+  - tame repair
+267:
+- - 1C1AF1
+  - 88, 89, 0, 5
+  - 28, 26, 241
+  - blushing language
+- - 2C2AF2
+  - 82, 83, 0, 5
+  - 44, 42, 242
+  - quarrelsome deranged
+- - 3C3AF3
+  - 75, 76, 0, 5
+  - 60, 58, 243
+  - tick ban
+- - 4C4AF4
+  - 69, 70, 0, 4
+  - 76, 74, 244
+  - daughter two
+- - 5C5AF5
+  - 62, 63, 0, 4
+  - 92, 90, 245
+  - breezy bruise
+269:
+- - 1C11FA
+  - 89, 93, 0, 2
+  - 28, 17, 250
+  - attempt hideous
+- - 2C22FA
+  - 82, 86, 0, 2
+  - 44, 34, 250
+  - crash bathe
+- - 3C33FA
+  - 76, 80, 0, 2
+  - 60, 51, 250
+  - jump magic
+- - 4C44FA
+  - 70, 73, 0, 2
+  - 76, 68, 250
+  - pat cats
+- - 5C55FA
+  - 63, 66, 0, 2
+  - 92, 85, 250
+  - fit fold
+272:
+- - A1C1F1
+  - 33, 20, 0, 5
+  - 161, 193, 241
+  - sulky gabby
+- - A2C2F2
+  - 33, 20, 0, 5
+  - 162, 194, 242
+  - icky dislike
+- - A3C3F3
+  - 33, 20, 0, 5
+  - 163, 195, 243
+  - quiet achiever
+- - A4C4F4
+  - 33, 20, 0, 4
+  - 164, 196, 244
+  - offend used
+- - A5C5F5
+  - 33, 20, 0, 4
+  - 165, 197, 245
+  - check charming
+273:
+- - 1AC1F1
+  - 89, 20, 0, 5
+  - 26, 193, 241
+  - unequal useful
+- - 2AC2F2
+  - 83, 20, 0, 5
+  - 42, 194, 242
+  - alert nest
+- - 3AC3F3
+  - 76, 20, 0, 5
+  - 58, 195, 243
+  - cough branch
+- - 4AC4F4
+  - 70, 20, 0, 4
+  - 74, 196, 244
+  - rejoice simplistic
+- - 5AC5F5
+  - 63, 20, 0, 4
+  - 90, 197, 245
+  - spotty fumbling
+275:
+- - 11CAF1
+  - 93, 16, 0, 5
+  - 17, 202, 241
+  - advertisement poke
+- - 22CAF2
+  - 86, 17, 0, 5
+  - 34, 202, 242
+  - vanish confuse
+- - 33CAF3
+  - 79, 17, 0, 5
+  - 51, 202, 243
+  - rub jaded
+- - 44CAF4
+  - 72, 17, 0, 4
+  - 68, 202, 244
+  - sink relax
+- - 55CAF5
+  - 65, 18, 0, 4
+  - 85, 202, 245
+  - laugh cumbersome
+277:
+- - 11C1FA
+  - 93, 23, 0, 2
+  - 17, 193, 250
+  - telling boy
+- - 22C2FA
+  - 86, 22, 0, 2
+  - 34, 194, 250
+  - pail fax
+- - 33C3FA
+  - 80, 22, 0, 2
+  - 51, 195, 250
+  - expert wakeful
+- - 44C4FA
+  - 73, 22, 0, 2
+  - 68, 196, 250
+  - stamp old-fashioned
+- - 55C5FA
+  - 66, 21, 0, 2
+  - 85, 197, 250
+  - disgusted overjoyed
+280:
+- - A11CF1
+  - 33, 88, 0, 5
+  - 161, 28, 241
+  - throne rapid
+- - A22CF2
+  - 33, 82, 0, 5
+  - 162, 44, 242
+  - buzz lively
+- - A33CF3
+  - 33, 75, 0, 5
+  - 163, 60, 243
+  - improve drum
+- - A44CF4
+  - 33, 69, 0, 4
+  - 164, 76, 244
+  - daily month
+- - A55CF5
+  - 33, 62, 0, 4
+  - 165, 92, 245
+  - greet needless
+281:
+- - 1A1CF1
+  - 89, 88, 0, 5
+  - 26, 28, 241
+  - tramp loving
+- - 2A2CF2
+  - 83, 82, 0, 5
+  - 42, 44, 242
+  - arrest connection
+- - 3A3CF3
+  - 76, 75, 0, 5
+  - 58, 60, 243
+  - meddle base
+- - 4A4CF4
+  - 70, 69, 0, 4
+  - 74, 76, 244
+  - metal lie
+- - 5A5CF5
+  - 63, 62, 0, 4
+  - 90, 92, 245
+  - saw periodic
+282:
+- - 11ACF1
+  - 93, 29, 0, 5
+  - 17, 172, 241
+  - encouraging attempt
+- - 22ACF2
+  - 86, 29, 0, 5
+  - 34, 172, 242
+  - earsplitting yell
+- - 33ACF3
+  - 79, 29, 0, 5
+  - 51, 172, 243
+  - test approve
+- - 44ACF4
+  - 72, 30, 0, 4
+  - 68, 172, 244
+  - clear company
+- - 55ACF5
+  - 65, 30, 0, 4
+  - 85, 172, 245
+  - vast instinctive
+285:
+- - 111CFA
+  - 93, 89, 0, 2
+  - 17, 28, 250
+  - smash plant
+- - 222CFA
+  - 86, 82, 0, 2
+  - 34, 44, 250
+  - remove hop
+- - 333CFA
+  - 80, 76, 0, 2
+  - 51, 60, 250
+  - panoramic desert
+- - 444CFA
+  - 73, 70, 0, 2
+  - 68, 76, 250
+  - nappy eminent
+- - 555CFA
+  - 66, 63, 0, 2
+  - 85, 92, 250
+  - lucky elated
+296:
+- - A111FC
+  - 36, 93, 0, 1
+  - 161, 17, 252
+  - ratty machine
+- - A222FC
+  - 36, 87, 0, 1
+  - 162, 34, 252
+  - dam outstanding
+- - A333FC
+  - 35, 80, 0, 1
+  - 163, 51, 252
+  - tap rule
+- - A444FC
+  - 35, 73, 0, 1
+  - 164, 68, 252
+  - bright caring
+- - A555FC
+  - 35, 66, 0, 1
+  - 165, 85, 252
+  - stop prose
+297:
+- - 1A11FC
+  - 90, 93, 0, 1
+  - 26, 17, 252
+  - late preserve
+- - 2A22FC
+  - 83, 87, 0, 1
+  - 42, 34, 252
+  - hapless popcorn
+- - 3A33FC
+  - 77, 80, 0, 1
+  - 58, 51, 252
+  - trouble wrong
+- - 4A44FC
+  - 71, 73, 0, 1
+  - 74, 68, 252
+  - left handle
+- - 5A55FC
+  - 64, 66, 0, 1
+  - 90, 85, 252
+  - foamy tremble
+298:
+- - 11A1FC
+  - 93, 36, 0, 1
+  - 17, 161, 252
+  - ducks scorch
+- - 22A2FC
+  - 87, 36, 0, 1
+  - 34, 162, 252
+  - irritate file
+- - 33A3FC
+  - 80, 35, 0, 1
+  - 51, 163, 252
+  - scintillating scold
+- - 44A4FC
+  - 73, 35, 0, 1
+  - 68, 164, 252
+  - brother spray
+- - 55A5FC
+  - 66, 35, 0, 1
+  - 85, 165, 252
+  - example borrow
+299:
+- - 111AFC
+  - 93, 90, 0, 1
+  - 17, 26, 252
+  - pizzas thoughtless
+- - 222AFC
+  - 87, 83, 0, 1
+  - 34, 42, 252
+  - sleepy miscreant
+- - 333AFC
+  - 80, 77, 0, 1
+  - 51, 58, 252
+  - juice breath
+- - 444AFC
+  - 73, 71, 0, 1
+  - 68, 74, 252
+  - cloth condition
+- - 555AFC
+  - 66, 64, 0, 1
+  - 85, 90, 252
+  - uptight hulking
+321:
+- - CA111F
+  - 0, 92, 85, 21
+  - 202, 17, 31
+  - word tip
+- - CA222F
+  - 0, 83, 77, 21
+  - 202, 34, 47
+  - post rod
+- - CA333F
+  - 0, 75, 69, 21
+  - 202, 51, 63
+  - sheet children
+- - CA444F
+  - 0, 66, 61, 21
+  - 202, 68, 79
+  - shy bad
+- - CA555F
+  - 0, 58, 53, 21
+  - 202, 85, 95
+  - vacation flow
+322:
+- - C1A11F
+  - 0, 17, 84, 24
+  - 193, 161, 31
+  - finicky amused
+- - C2A22F
+  - 0, 16, 76, 24
+  - 194, 162, 47
+  - bells flight
+- - C3A33F
+  - 0, 16, 68, 24
+  - 195, 163, 63
+  - large waiting
+- - C4A44F
+  - 0, 16, 60, 23
+  - 196, 164, 79
+  - gullible cluttered
+- - C5A55F
+  - 0, 16, 52, 23
+  - 197, 165, 95
+  - smell farm
+323:
+- - C11A1F
+  - 0, 87, 84, 24
+  - 193, 26, 31
+  - name discussion
+- - C22A2F
+  - 0, 78, 76, 24
+  - 194, 42, 47
+  - strip splendid
+- - C33A3F
+  - 0, 70, 68, 24
+  - 195, 58, 63
+  - warm damp
+- - C44A4F
+  - 0, 62, 60, 23
+  - 196, 74, 79
+  - nutty empty
+- - C55A5F
+  - 0, 54, 52, 23
+  - 197, 90, 95
+  - acid pass
+324:
+- - C111AF
+  - 0, 91, 9, 24
+  - 193, 17, 175
+  - odd sign
+- - C222AF
+  - 0, 82, 10, 24
+  - 194, 34, 175
+  - unable future
+- - C333AF
+  - 0, 74, 10, 24
+  - 195, 51, 175
+  - fair rail
+- - C444AF
+  - 0, 65, 11, 23
+  - 196, 68, 175
+  - carry craven
+- - C555AF
+  - 0, 57, 11, 23
+  - 197, 85, 175
+  - cactus unused
+328:
+- - AC111F
+  - 0, 90, 82, 33
+  - 172, 17, 31
+  - jumpy knock
+- - AC222F
+  - 0, 80, 73, 33
+  - 172, 34, 47
+  - fill pleasure
+- - AC333F
+  - 0, 70, 63, 33
+  - 172, 51, 63
+  - calculating shallow
+- - AC444F
+  - 0, 60, 54, 33
+  - 172, 68, 79
+  - dinner industrious
+- - AC555F
+  - 0, 51, 45, 33
+  - 172, 85, 95
+  - wink invincible
+330:
+- - 1CA11F
+  - 83, 0, 81, 37
+  - 28, 161, 31
+  - impress enjoy
+- - 2CA22F
+  - 73, 0, 71, 36
+  - 44, 162, 47
+  - order press
+- - 3CA33F
+  - 63, 0, 61, 36
+  - 60, 163, 63
+  - examine interrupt
+- - 4CA44F
+  - 54, 0, 52, 36
+  - 76, 164, 79
+  - fearful grateful
+- - 5CA55F
+  - 44, 0, 42, 35
+  - 92, 165, 95
+  - unequaled distribution
+331:
+- - 1C1A1F
+  - 10, 16, 0, 88
+  - 28, 26, 31
+  - income doll
+- - 2C2A2F
+  - 6, 11, 0, 82
+  - 44, 42, 47
+  - coat uneven
+- - 3C3A3F
+  - 5, 8, 0, 75
+  - 60, 58, 63
+  - grain glamorous
+- - 4C4A4F
+  - 4, 6, 0, 69
+  - 76, 74, 79
+  - suffer tempt
+- - 5C5A5F
+  - 3, 5, 0, 63
+  - 92, 90, 95
+  - nail hard
+332:
+- - 1C11AF
+  - 84, 90, 0, 31
+  - 28, 17, 175
+  - colorful back
+- - 2C22AF
+  - 75, 81, 0, 31
+  - 44, 34, 175
+  - undesirable wire
+- - 3C33AF
+  - 66, 71, 0, 31
+  - 60, 51, 175
+  - invent sordid
+- - 4C44AF
+  - 57, 61, 0, 31
+  - 76, 68, 175
+  - bucket nauseating
+- - 5C55AF
+  - 47, 51, 0, 31
+  - 92, 85, 175
+  - accept godly
+336:
+- - A1C11F
+  - 17, 0, 84, 24
+  - 161, 193, 31
+  - willing supreme
+- - A2C22F
+  - 16, 0, 76, 24
+  - 162, 194, 47
+  - noisy plain
+- - A3C33F
+  - 16, 0, 68, 24
+  - 163, 195, 63
+  - steer ruddy
+- - A4C44F
+  - 16, 0, 60, 23
+  - 164, 196, 79
+  - flower obedient
+- - A5C55F
+  - 16, 0, 52, 23
+  - 165, 197, 95
+  - trick unkempt
+337:
+- - 1AC11F
+  - 87, 0, 84, 24
+  - 26, 193, 31
+  - hideous husky
+- - 2AC22F
+  - 78, 0, 76, 24
+  - 42, 194, 47
+  - decide steadfast
+- - 3AC33F
+  - 70, 0, 68, 24
+  - 58, 195, 63
+  - abrupt mailbox
+- - 4AC44F
+  - 62, 0, 60, 23
+  - 74, 196, 79
+  - acoustic encourage
+- - 5AC55F
+  - 54, 0, 52, 23
+  - 90, 197, 95
+  - cart bee
+339:
+- - 11CA1F
+  - 92, 0, 85, 21
+  - 17, 202, 31
+  - pear kitty
+- - 22CA2F
+  - 83, 0, 77, 21
+  - 34, 202, 47
+  - fade upset
+- - 33CA3F
+  - 75, 0, 69, 21
+  - 51, 202, 63
+  - dry educate
+- - 44CA4F
+  - 66, 0, 61, 21
+  - 68, 202, 79
+  - sort possess
+- - 55CA5F
+  - 58, 0, 53, 21
+  - 85, 202, 95
+  - clip rot
+340:
+- - 11C1AF
+  - 91, 0, 9, 24
+  - 17, 193, 175
+  - abrasive yummy
+- - 22C2AF
+  - 82, 0, 10, 24
+  - 34, 194, 175
+  - butter young
+- - 33C3AF
+  - 74, 0, 10, 24
+  - 51, 195, 175
+  - nauseating breathe
+- - 44C4AF
+  - 65, 0, 11, 23
+  - 68, 196, 175
+  - wholesale shiver
+- - 55C5AF
+  - 57, 0, 11, 23
+  - 85, 197, 175
+  - treatment political
+344:
+- - A11C1F
+  - 0, 83, 81, 37
+  - 161, 28, 31
+  - sweet assorted
+- - A22C2F
+  - 0, 73, 71, 36
+  - 162, 44, 47
+  - dream escape
+- - A33C3F
+  - 0, 63, 61, 36
+  - 163, 60, 63
+  - snails fine
+- - A44C4F
+  - 0, 54, 52, 36
+  - 164, 76, 79
+  - like lumpy
+- - A55C5F
+  - 0, 44, 42, 35
+  - 165, 92, 95
+  - cross broad
+345:
+- - 1A1C1F
+  - 16, 10, 0, 88
+  - 26, 28, 31
+  - pump throne
+- - 2A2C2F
+  - 11, 6, 0, 82
+  - 42, 44, 47
+  - top vigorous
+- - 3A3C3F
+  - 8, 5, 0, 75
+  - 58, 60, 63
+  - fertile station
+- - 4A4C4F
+  - 6, 4, 0, 69
+  - 74, 76, 79
+  - dear lace
+- - 5A5C5F
+  - 5, 3, 0, 63
+  - 90, 92, 95
+  - threatening gaping
+346:
+- - 11AC1F
+  - 90, 0, 82, 33
+  - 17, 172, 31
+  - green kill
+- - 22AC2F
+  - 80, 0, 73, 33
+  - 34, 172, 47
+  - second unequaled
+- - 33AC3F
+  - 70, 0, 63, 33
+  - 51, 172, 63
+  - miss crooked
+- - 44AC4F
+  - 60, 0, 54, 33
+  - 68, 172, 79
+  - pointless plastic
+- - 55AC5F
+  - 51, 0, 45, 33
+  - 85, 172, 95
+  - open gentle
+348:
+- - 111CAF
+  - 90, 84, 0, 31
+  - 17, 28, 175
+  - neighborly curve
+- - 222CAF
+  - 81, 75, 0, 31
+  - 34, 44, 175
+  - gusty polite
+- - 333CAF
+  - 71, 66, 0, 31
+  - 51, 60, 175
+  - spooky partner
+- - 444CAF
+  - 61, 57, 0, 31
+  - 68, 76, 175
+  - warm abashed
+- - 555CAF
+  - 51, 47, 0, 31
+  - 85, 92, 175
+  - insurance addition
+352:
+- - A111CF
+  - 22, 92, 0, 19
+  - 161, 17, 207
+  - zip six
+- - A222CF
+  - 22, 84, 0, 19
+  - 162, 34, 207
+  - foot placid
+- - A333CF
+  - 21, 75, 0, 19
+  - 163, 51, 207
+  - bounce simple
+- - A444CF
+  - 21, 67, 0, 19
+  - 164, 68, 207
+  - peel mom
+- - A555CF
+  - 20, 59, 0, 19
+  - 165, 85, 207
+  - blue-eyed girls
+353:
+- - 1A11CF
+  - 87, 92, 0, 19
+  - 26, 17, 207
+  - heavenly mice
+- - 2A22CF
+  - 80, 84, 0, 19
+  - 42, 34, 207
+  - overconfident whirl
+- - 3A33CF
+  - 72, 75, 0, 19
+  - 58, 51, 207
+  - twist lazy
+- - 4A44CF
+  - 64, 67, 0, 19
+  - 74, 68, 207
+  - common gifted
+- - 5A55CF
+  - 57, 59, 0, 19
+  - 90, 85, 207
+  - square ludicrous
+354:
+- - 11A1CF
+  - 92, 22, 0, 19
+  - 17, 161, 207
+  - middle cooperative
+- - 22A2CF
+  - 84, 22, 0, 19
+  - 34, 162, 207
+  - dogs comfortable
+- - 33A3CF
+  - 75, 21, 0, 19
+  - 51, 163, 207
+  - dysfunctional overwrought
+- - 44A4CF
+  - 67, 21, 0, 19
+  - 68, 164, 207
+  - wretched store
+- - 55A5CF
+  - 59, 20, 0, 19
+  - 85, 165, 207
+  - practise groovy
+355:
+- - 111ACF
+  - 92, 87, 0, 19
+  - 17, 26, 207
+  - ruin alike
+- - 222ACF
+  - 84, 80, 0, 19
+  - 34, 42, 207
+  - wacky muscle
+- - 333ACF
+  - 75, 72, 0, 19
+  - 51, 58, 207
+  - glistening dynamic
+- - 444ACF
+  - 67, 64, 0, 19
+  - 68, 74, 207
+  - dapper snails
+- - 555ACF
+  - 59, 57, 0, 19
+  - 85, 90, 207
+  - open ugly

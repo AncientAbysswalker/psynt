@@ -1,0 +1,31 @@
+staticbox_label: Please select your preference level for each of the following actions
+rbox_labels:
+- No Preference
+- Mild Preference
+- Moderate Preference
+- Strong Preference
+summary_col_1: HEX
+link_1: "https://www.colorhexa.com/{}"
+link_vis_1: true
+link_var_1: 0
+summary_col_2: RGB
+link_2: "https://www.colorhexa.com/{}"
+link_vis_2: true
+link_var_2: 0
+summary_col_3: CMYK
+link_3: "https://www.colorhexa.com/{}"
+link_vis_3: true
+link_var_3: 0
+summary_col_4: Color Name
+link_4: "https://www.colorhexa.com/{}"
+link_vis_4: true
+link_var_4: 0
+summary_text: "Below is a list of colors that you should like based on your answers:"
+initials:
+- H-CYA
+- L-CYA
+- H-MAG
+- L-MAG
+- H-YEL
+- L-YEL
+- NULL

@@ -44,7 +44,7 @@ class PaneCover(wx.Panel):
         self.parent = parent
 
         # Load cover image
-        image = wx.Image(os.path.join(app_root, 'cover.jpg'), wx.BITMAP_TYPE_ANY)
+        image = wx.Image(os.path.join(app_root, 'img', 'cover.jpg'))
         (w1, h1) = image.GetSize()
         (w2, h2) = wx.GetDisplaySize()
 

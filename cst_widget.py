@@ -10,9 +10,7 @@ Attributes:
         one convention to document module level variables and be consistent
         with it.
 
-Todo:
-    * NONE ATM
-
+        TODO: Update this header
 """
 
 import wx
@@ -36,7 +34,9 @@ class QuizRadioBox(wx.Control):
         self.question_text = wx.StaticText(self, size=(-1, -1), label="NULL")
         self.sizer_main.Add(self.question_text, border=15, flag=wx.ALL | wx.ALIGN_CENTER_VERTICAL)
 
-        self.select_arrow = wx.StaticBitmap(self, bitmap=wx.Bitmap(wx.Image(os.path.join(app_root, 'larr.png'))))
+        self.select_arrow = wx.StaticBitmap(self, bitmap=wx.Bitmap(wx.Image(os.path.join(app_root,
+                                                                                         'img',
+                                                                                         'r_arr.png'))))
 
         self.sizer_rbox.Add(self.select_arrow, flag=wx.ALL | wx.ALIGN_CENTER_VERTICAL)
         self.select_arrow.Hide()

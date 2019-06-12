@@ -10,6 +10,7 @@ import yaml
 import cst_pane
 import config
 
+is_demo = True
 
 # Handle whether we are frozen
 if getattr(sys, 'frozen', False):
@@ -73,14 +74,24 @@ class MainApp(wx.Frame):
 
     def load_questions(self):
         """Load the questions file and populate self.questions"""
-        with open(os.path.join(app_root, 'questions.txt'), 'r') as file:
+        if is_demo:
+            _file = 'questions_demo.txt'
+        else:
+            _file = 'questions_production.txt'
+
+        with open(os.path.join(app_root, _file), 'r') as file:
             for line in file:
                 _type, _question = line.strip().split(" :: ")
                 self.questions.append([_question, int(_type)])
 
     def load_convert_key(self):
         """Load the parameters key"""
-        with open(os.path.join(app_root, 'convert_key.yaml'), 'r') as stream:
+        if is_demo:
+            _file = 'convert_key_demo.yaml'
+        else:
+            _file = 'convert_key_production.yaml'
+
+        with open(os.path.join(app_root, _file), 'r') as stream:
             self.convert_key = yaml.safe_load(stream)
 
 
