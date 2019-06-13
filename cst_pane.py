@@ -106,28 +106,42 @@ class PaneInstruct(wx.Panel):
 
         self.parent = parent
 
-        # Load cover image
-        image = wx.Image(os.path.join(app_root, 'cover.jpg'), wx.BITMAP_TYPE_ANY)
-        (w1, h1) = image.GetSize()
-        (w2, h2) = wx.GetDisplaySize()
-
-        # Resize accordingly
-        if w1 / h1 < w2 / h2:
-            image_bitmap = wx.StaticBitmap(self, bitmap=wx.Bitmap(image.Rescale(w2, h1 * w2 / w1)))
-        else:
-            image_bitmap = wx.StaticBitmap(self, bitmap=wx.Bitmap(image.Rescale(w1 * h2 / h1, h2)))
+        # Draw Style
+        font = self.GetFont()
+        font.SetPointSize(15)
+        self.SetFont(font)
+        self.SetBackgroundColour(gbl_colors.background)
 
         # Bind keypresses to continue to the next page
         self.Bind(wx.EVT_CHAR_HOOK, self.event_keypress)
 
-        # Next button with bind - Deprecated
-        #button_start = wx.Button(self, label='Start')
-        #button_start.Bind(wx.EVT_BUTTON, self.event_change_pane)
+        # Instructions
+        instruct_header = wx.StaticText(self, size=(-1, -1), label="Instructions:")
+        instruct = wx.TextCtrl(self, -1, config.instructions +
+                               "\r\n\r\n You can navigate this quiz either by clicking your answers "
+                               "manually. If you would prefer to answer using the keyboard, press TAB to "
+                               "enter keyboard mode. The controls are as follows:\r\n > Keys 1-4 answer "
+                               "questions and move on to the next question\r\n > TAB moves to the next "
+                               "question\r\n > SHIFT-TAB moves back a question\r\n > ENTER submits your"
+                               "answer for the current batch of questions",
+                               size=(-1, 35),
+                               style=wx.TE_MULTILINE |
+                                     wx.TE_WORDWRAP |
+                                     wx.TE_NO_VSCROLL |
+                                     wx.TE_READONLY |
+                                     wx.BORDER_NONE)
+        instruct.SetBackgroundColour(gbl_colors.background)
+
+        # Start button with bind
+        button_start = wx.Button(self, label='Start')
+        button_start.Bind(wx.EVT_BUTTON, self.event_change_pane)
 
         # Main Sizer
         self.sizer = wx.BoxSizer(wx.VERTICAL)
-        self.sizer.Add(image_bitmap, proportion=1, flag=wx.ALL | wx.EXPAND)
-        #self.sizer.Add(button_start, flag=wx.CENTER)
+        self.sizer.Add(instruct_header)
+        self.sizer.Add(wx.StaticLine(self, style=wx.LI_HORIZONTAL), flag=wx.EXPAND)
+        self.sizer.Add(instruct, proportion=1, flag=wx.ALL | wx.EXPAND)
+        self.sizer.Add(button_start, flag=wx.CENTER)
         self.SetSizer(self.sizer)
 
         self.Layout()
