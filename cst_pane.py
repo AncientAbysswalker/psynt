@@ -79,7 +79,7 @@ class PaneCover(wx.Panel):
                 return
 
     def event_change_pane(self, event):
-        """Toggle frame's sizer to correspond to the quiz pane"""
+        """Toggle frame's sizer to correspond to the instructions pane"""
 
         # Only proceed if this pane is active
         if self.IsShown():
@@ -91,7 +91,7 @@ class PaneCover(wx.Panel):
 
 
 class PaneInstruct(wx.Panel):
-    """Master pane that acts as the landing page of the application
+    """Instructions pane before moving forward with the application
 
             Args:
                 parent (ptr): Reference to the wx.object this panel belongs to
@@ -281,7 +281,7 @@ class PaneTest(wx.Panel):
 
             # Handles the use of number keys (1-4) to set question answer
             if event.GetKeyCode() in range(49, 53) and self.selected_question >= 0:
-                self.radio_boxes[self.selected_question].SetSelection(event.GetKeyCode() - 48)
+                self.radio_boxes[self.selected_question].set_selection(event.GetKeyCode() - 48)
                 self.select_next()
                 return
 
@@ -291,12 +291,12 @@ class PaneTest(wx.Panel):
         # Only proceed if all radio buttons have been filled and this pane is active
         if self.IsShown():
             for rbox in self.radio_boxes:
-                if rbox.GetSelection() == 0 and rbox.IsShown():
+                if rbox.get_selection() == 0 and rbox.IsShown():
                     return
 
             # Commit scoring results
             for rbox in self.radio_boxes:
-                self.parent.scoring[rbox.q_type] += rbox.GetSelection()
+                self.parent.scoring[rbox.q_type] += rbox.get_selection()
 
             # If there are more questions, pop/push a set and reset the radio buttons to no selection
             if len(self.parent.questions) > 0:
@@ -306,7 +306,7 @@ class PaneTest(wx.Panel):
 
                 # Reset radio buttons
                 for rbox in self.radio_boxes:
-                    rbox.SetSelection(0)
+                    rbox.set_selection(0)
 
             # Otherwise, toggle frame's sizer to correspond to the summary pane and carry out ranking
             else:
@@ -331,32 +331,32 @@ class PaneTest(wx.Panel):
         """Select next radio button"""
         if self.selected_question == -1:
             self.selected_question = 0
-            self.radio_boxes[0].SelectedQuestion(True)
+            self.radio_boxes[0].selected_question(True)
             self.Layout()
         elif self.selected_question < len(self.current_questions) - 1:#len(self.radio_boxes) - 1:
-            self.radio_boxes[self.selected_question].SelectedQuestion(False)
+            self.radio_boxes[self.selected_question].selected_question(False)
             self.selected_question += 1
-            self.radio_boxes[self.selected_question].SelectedQuestion(True)
+            self.radio_boxes[self.selected_question].selected_question(True)
             self.Layout()
 
     def select_prev(self):
         """Select previous radio button"""
         if self.selected_question == 0:
-            self.radio_boxes[0].SelectedQuestion(False)
+            self.radio_boxes[0].selected_question(False)
             self.selected_question = -1
             self.Layout()
         elif self.selected_question > 0:
-            self.radio_boxes[self.selected_question].SelectedQuestion(False)
+            self.radio_boxes[self.selected_question].selected_question(False)
             self.selected_question -= 1
-            self.radio_boxes[self.selected_question].SelectedQuestion(True)
+            self.radio_boxes[self.selected_question].selected_question(True)
             self.Layout()
 
     def select_first(self):
         """Select first radio button"""
         if self.selected_question >= 0:
-            self.radio_boxes[self.selected_question].SelectedQuestion(False)
+            self.radio_boxes[self.selected_question].selected_question(False)
             self.selected_question = 0
-            self.radio_boxes[0].SelectedQuestion(True)
+            self.radio_boxes[0].selected_question(True)
             self.Layout()
 
     def determine_results(self):
