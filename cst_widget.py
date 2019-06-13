@@ -1,17 +1,5 @@
 # -*- coding: utf-8 -*-
-"""This module contains custom dialog boxes to work with the main code base.
-
-Attributes:
-    module_level_variable1 (int): Module level variables may be documented in
-        either the ``Attributes`` section of the module docstring, or in an
-        inline docstring immediately following the variable.
-
-        Either form is acceptable, but the two should not be mixed. Choose
-        one convention to document module level variables and be consistent
-        with it.
-
-        TODO: Update this header
-"""
+"""This module contains a custom widget that is essentially the default radio buttons, but with needed functionality."""
 
 import wx
 import os
