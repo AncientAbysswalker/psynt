@@ -83,6 +83,7 @@ class QuizRadioBox(wx.Control):
         self._items.append(rb)
 
     def on_select(self, evt):
+        """Upon clicking, set value and send event"""
         ctrl = evt.GetEventObject()
         for i, rb in enumerate(self._items):
             if rb.GetLabel() == ctrl.GetLabel():
