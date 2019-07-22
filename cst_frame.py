@@ -10,7 +10,7 @@ import yaml
 import cst_pane
 import config
 
-is_demo = False
+is_demo = True
 
 # Handle whether we are frozen
 if getattr(sys, 'frozen', False):

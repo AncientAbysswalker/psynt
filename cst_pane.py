@@ -9,7 +9,7 @@ import cst_panel
 import cst_widget
 import gbl_colors
 import config
-from cst_frame import app_root
+from cst_frame import app_root, is_demo
 
 
 def list_max_index(ls, n):
@@ -44,7 +44,10 @@ class PaneCover(wx.Panel):
         self.parent = parent
 
         # Load cover image
-        image = wx.Image(os.path.join(app_root, 'img', 'cover.jpg'))
+        if is_demo:
+            image = wx.Image(os.path.join(app_root, 'img', 'cover_demo.jpg'))
+        else:
+            image = wx.Image(os.path.join(app_root, 'img', 'cover_production.jpg'))
         (w1, h1) = image.GetSize()
         (w2, h2) = wx.GetDisplaySize()
 
